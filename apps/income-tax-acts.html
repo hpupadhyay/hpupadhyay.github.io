@@ -5,17 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Income Tax Acts 2025 — Hari Prasad Upadhyay</title>
 <link rel="stylesheet" href="../css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
+<nav class="nav">
   <div class="container">
-    <h1>Hari Prasad Upadhyay</h1>
-    <nav>
-      <a href="../index.html">Apps</a>
-    </nav>
+    <a href="../index.html" class="nav-brand"><span class="dot"></span>Hari Prasad Upadhyay</a>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="public.html">Apps</a>
+      <a href="testing.html">Testing</a>
+      <a href="development.html">In Progress</a>
+      <a href="https://groups.google.com/g/build--test-app-club" target="_blank" class="nav-cta">Join Tester's Group</a>
+    </div>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
   </div>
-</header>
+</nav>
 
 <div class="container app-page">
   <a class="back" href="../index.html">&larr; All Apps</a>
@@ -63,11 +70,17 @@
   </div>
 </div>
 
-<footer>
+<footer class="footer">
   <div class="container">
-    <p>&copy; 2026 Hari Prasad Upadhyay &nbsp;|&nbsp; <a href="mailto:hariprasadupadhyay2@gmail.com">hariprasadupadhyay2@gmail.com</a></p>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Hari Prasad Upadhyay</p>
+      <div class="footer-social">
+        <a href="https://github.com/hpupadhyay" target="_blank">GH</a>
+      </div>
+    </div>
   </div>
 </footer>
+<script>window.addEventListener('scroll',function(){document.querySelector('.nav').classList.toggle('scrolled',window.scrollY>20)});</script>
 
 </body>
 </html>

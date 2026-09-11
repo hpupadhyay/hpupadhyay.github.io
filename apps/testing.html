@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apps Under Testing — Hari Prasad Upadhyay</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a href="../index.html" class="nav-brand">Hari Prasad Upadhyay</a>
+    <div class="nav-links">
+      <a href="public.html">Apps</a>
+      <a href="testing.html" class="active">Testing</a>
+      <a href="development.html">In Progress</a>
+      <a href="https://groups.google.com/g/build--test-app-club" target="_blank" class="nav-cta">Join Tester's Group</a>
+    </div>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<main>
+<div class="container">
+  <div class="page-header">
+    <h2>Early Access — Under Testing</h2>
+    <p>Beta versions being tested before public release. Join the tester's group to get access.</p>
+  </div>
+  <div class="apps-grid">
+    <div class="app-card">
+      <a class="card-link" href="https://play.google.com/store/apps/details?id=com.moneytracker.exp" target="_blank"></a>
+      <img class="icon" src="../assets/expense-tracker.png" alt="Expense Tracker icon">
+      <h3>Expense Tracker</h3>
+      <p>Track daily expenses and income with ease. Fully offline, your financial data stays on your device.</p>
+      <a class="btn btn-early" href="https://play.google.com/store/apps/details?id=com.moneytracker.exp" target="_blank">Early Access</a>
+      <a class="btn btn-outline" href="expense-tracker.html">Details</a>
+    </div>
+    <div class="app-card">
+      <a class="card-link" href="https://play.google.com/store/apps/details?id=com.financalc.calculator" target="_blank"></a>
+      <img class="icon" src="../assets/finance-calculator.png" alt="Finance Calculator icon">
+      <h3>Finance Calculator</h3>
+      <p>Quick financial calculations — EMI, GST, investment, arbitrage, and more.</p>
+      <a class="btn btn-early" href="https://play.google.com/store/apps/details?id=com.financalc.calculator" target="_blank">Early Access</a>
+      <a class="btn btn-outline" href="finance-calculator.html">Details</a>
+    </div>
+    <div class="app-card">
+      <a class="card-link" href="https://play.google.com/store/apps/details?id=com.mrpcalculator.mrp_calculator" target="_blank"></a>
+      <img class="icon" src="../assets/mrp-calculator.png" alt="MRP & Profit Calculator icon">
+      <h3>MRP &amp; Profit Calculator</h3>
+      <p>Calculate MRP, profit margins, and discounts quickly and accurately.</p>
+      <a class="btn btn-early" href="https://play.google.com/store/apps/details?id=com.mrpcalculator.mrp_calculator" target="_blank">Early Access</a>
+      <a class="btn btn-outline" href="mrp-calculator.html">Details</a>
+    </div>
+  </div>
+</div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <p>&copy; 2026 Hari Prasad Upadhyay</p>
+    </div>
+  </div>
+</footer>
+<script>window.addEventListener('scroll',function(){document.querySelector('.nav').classList.toggle('scrolled',window.scrollY>20)});</script>
+</body>
+</html>

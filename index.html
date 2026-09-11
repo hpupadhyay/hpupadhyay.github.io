@@ -4,87 +4,319 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hari Prasad Upadhyay — Android Developer</title>
+<meta name="description" content="Android developer building offline-first, privacy-friendly tools. Expense Tracker, Finance Calculator, Income Tax Acts, and more.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header>
+<!-- Navigation -->
+<nav class="nav">
   <div class="container">
-    <h1>Hari Prasad Upadhyay</h1>
-    <nav>
-      <a href="index.html">Apps</a>
-      <a href="https://hpupadhyay.github.io/about/app-ads.txt">Ads</a>
-    </nav>
+    <a href="index.html" class="nav-brand">Hari Prasad Upadhyay</a>
+    <div class="nav-links">
+      <a href="apps/public.html">Apps</a>
+      <a href="apps/testing.html">Testing</a>
+      <a href="apps/development.html">In Progress</a>
+      <a href="https://groups.google.com/g/build--test-app-club" target="_blank" class="nav-cta">Join Tester's Group</a>
+    </div>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
   </div>
-</header>
+</nav>
 
+<main>
+<!-- Hero -->
 <div class="hero">
-  <h2>Hi, I'm Hari Prasad Upadhyay</h2>
-  <p>Account Manager by profession, builder by passion. I create simple Android tools that make everyday tasks easier — from tax calculations to expense tracking.</p>
-</div>
-
-<div class="section" style="text-align:center;padding:0 20px 20px;">
-  <p style="color:#666;max-width:600px;margin:0 auto;">I build apps that I personally use and need. No complexity, no bloat — just simple tools that solve real problems. All apps are offline-first, privacy-friendly, and free.</p>
-</div>
-
-<div class="container">
-  <div class="apps-grid">
-
-    <div class="app-card">
-      <img class="icon" src="assets/expense-tracker.png" alt="Expense Tracker icon">
-      <h3>Expense Tracker</h3>
-      <p>Track daily expenses and income with ease. Fully offline, your financial data stays on your device.</p>
-      <a class="btn" href="https://play.google.com/store/apps/details?id=com.moneytracker.exp">Get on Play Store</a>
-      <a class="btn" href="apps/expense-tracker.html" style="background:#fff;color:#1a73e8;border:1px solid #1a73e8;margin-left:8px;">Details</a>
+  <div class="container">
+    <div class="hero-badge">
+      <span class="pulse"></span>
+      Open for collaborations
     </div>
-
-    <div class="app-card">
-      <img class="icon" src="assets/finance-calculator.png" alt="Finance Calculator icon">
-      <h3>Finance Calculator</h3>
-      <p>Quick financial calculations — EMI, GST, investment, arbitrage, and more.</p>
-      <a class="btn" href="https://play.google.com/store/apps/details?id=com.financalc.calculator">Get on Play Store</a>
-      <a class="btn" href="apps/finance-calculator.html" style="background:#fff;color:#1a73e8;border:1px solid #1a73e8;margin-left:8px;">Details</a>
+    <h1>Building apps that people actually use</h1>
+    <p class="subtitle">Offline-first, privacy-friendly Android tools. Simple, free, and built to solve real problems.</p>
+    <div class="hero-actions">
+      <a href="#categories" class="btn-primary">Explore My Apps</a>
+      <a href="https://groups.google.com/g/build--test-app-club" target="_blank" class="btn-secondary">Join Tester's Group</a>
     </div>
-
-    <div class="app-card">
-      <img class="icon" src="assets/income-tax.png" alt="Income Tax Acts 2025 icon">
-      <h3>Income Tax Acts 2025</h3>
-      <p>Complete Income-tax Act, 2025 and Rules, 2026 — fully offline reference with bookmarks and search.</p>
-      <a class="btn" href="https://play.google.com/store/apps/details?id=com.income_tax_bare_act">Get on Play Store</a>
-      <a class="btn" href="apps/income-tax-acts.html" style="background:#fff;color:#1a73e8;border:1px solid #1a73e8;margin-left:8px;">Details</a>
-    </div>
-
-    <div class="app-card">
-      <img class="icon" src="assets/mrp-calculator.png" alt="MRP & Profit Calculator icon">
-      <h3>MRP &amp; Profit Calculator</h3>
-      <p>Calculate MRP, profit margins, and discounts quickly and accurately.</p>
-      <a class="btn" href="https://play.google.com/store/apps/details?id=com.mrpcalculator.mrp_calculator">Get on Play Store</a>
-      <a class="btn" href="apps/mrp-calculator.html" style="background:#fff;color:#1a73e8;border:1px solid #1a73e8;margin-left:8px;">Details</a>
-    </div>
-
-    <div class="app-card">
-      <img class="icon" src="assets/tds-calculator.png" alt="TDS Calculator India icon">
-      <h3>TDS Calculator India</h3>
-      <p>Calculate TDS deductions as per Indian tax rules. Simple and accurate.</p>
-      <a class="btn" href="https://play.google.com/store/apps/details?id=com.tdscalculator.tds_calculator">Get on Play Store</a>
-      <a class="btn" href="apps/tds-calculator.html" style="background:#fff;color:#1a73e8;border:1px solid #1a73e8;margin-left:8px;">Details</a>
-    </div>
-
   </div>
 </div>
 
-<div class="contact-section" style="text-align:center;padding:60px 20px;background:#fff;border-top:1px solid #e0e0e0;">
-  <h2 style="margin-bottom:8px;">Get in Touch</h2>
-  <p style="color:#666;margin-bottom:20px;">Have a suggestion or want to collaborate? Reach out anytime.</p>
-  <a href="mailto:hariprasadupadhyay2@gmail.com" style="display:inline-block;padding:12px 28px;background:#1a73e8;color:#fff;border-radius:8px;font-size:1em;margin:0 8px;">Email Me</a>
-  <a href="https://github.com/hpupadhyay" target="_blank" style="display:inline-block;padding:12px 28px;background:#333;color:#fff;border-radius:8px;font-size:1em;margin:0 8px;">GitHub</a>
+<!-- Stats -->
+<div class="stats-bar">
+  <div class="stat-item">
+    <span class="stat-number">5</span>
+    <span class="stat-label">Apps Published</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-number">4</span>
+    <span class="stat-label">In Development</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-number">100%</span>
+    <span class="stat-label">Offline First</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-number">0</span>
+    <span class="stat-label">Sign-ups Required</span>
+  </div>
 </div>
 
-<footer>
+<!-- Why Section -->
+<div class="why section-pad">
   <div class="container">
-    <p>&copy; 2026 Hari Prasad Upadhyay &nbsp;|&nbsp; <a href="mailto:hariprasadupadhyay2@gmail.com">hariprasadupadhyay2@gmail.com</a> &nbsp;|&nbsp; <a href="https://github.com/hpupadhyay" target="_blank">GitHub</a></p>
+    <div class="section-header">
+      <span class="overline">Why I Build</span>
+      <h2>Simple tools that solve real problems</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon">&#x1F512;</div>
+        <h3>100% Offline</h3>
+        <p>Your data never leaves your device. No accounts, no cloud, no tracking. Just you and your data.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">&#x26A1;</div>
+        <h3>Lightweight &amp; Fast</h3>
+        <p>No bloat, no unnecessary permissions. Small APKs that load instantly and run smoothly.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">&#x1F331;</div>
+        <h3>Free Forever</h3>
+        <p>All apps are free with no hidden charges. No subscriptions, no premium tiers. Just download and use.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- How It Works -->
+<div class="how section-pad">
+  <div class="container">
+    <div class="section-header">
+      <span class="overline">How It Works</span>
+      <h2>Designed for privacy, built for speed</h2>
+    </div>
+    <div class="how-steps">
+      <div class="how-step">
+        <div class="step-num">1</div>
+        <h3>Download &amp; Install</h3>
+        <p>Grab the app from Play Store. No sign-ups, no account creation. Just install and open.</p>
+      </div>
+      <div class="how-step">
+        <div class="step-num">2</div>
+        <h3>Use Immediately</h3>
+        <p>Start tracking, calculating, or managing right away. The app works fully offline from day one.</p>
+      </div>
+      <div class="how-step">
+        <div class="step-num">3</div>
+        <h3>Your Data Stays Yours</h3>
+        <p>Everything is stored locally on your device. No servers, no cloud, no one can access your data but you.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- App Previews -->
+<div class="previews section-pad">
+  <div class="container">
+    <div class="section-header">
+      <span class="overline">App Previews</span>
+      <h2>Built with care, designed for you</h2>
+    </div>
+    <div class="preview-scroll">
+      <div class="preview-card">
+        <div class="preview-phone">
+          <img src="assets/expense-tracker-s1.jpg" alt="Expense Tracker screenshot">
+        </div>
+        <h3>Expense Tracker</h3>
+        <p>Track every rupee with ease</p>
+      </div>
+      <div class="preview-card">
+        <div class="preview-phone">
+          <img src="assets/finance-calc-s1.jpg" alt="Finance Calculator screenshot">
+        </div>
+        <h3>Finance Calculator</h3>
+        <p>Quick financial math</p>
+      </div>
+      <div class="preview-card">
+        <div class="preview-phone">
+          <img src="assets/income-tax-s1.jpg" alt="Income Tax Acts screenshot">
+        </div>
+        <h3>Income Tax Acts</h3>
+        <p>Complete tax reference</p>
+      </div>
+      <div class="preview-card">
+        <div class="preview-phone">
+          <img src="assets/mrp-calc-s1.jpg" alt="MRP Calculator screenshot">
+        </div>
+        <h3>MRP Calculator</h3>
+        <p>Calculate margins instantly</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Tech Stack -->
+<div class="techstack section-pad">
+  <div class="container">
+    <div class="section-header">
+      <span class="overline">Tech Stack</span>
+      <h2>Built with modern tools</h2>
+    </div>
+    <div class="tech-grid">
+      <div class="tech-item">
+        <div class="tech-icon">&#x1F4F1;</div>
+        <h3>Flutter</h3>
+        <p>Cross-platform UI for fast, beautiful apps</p>
+      </div>
+      <div class="tech-item">
+        <div class="tech-icon">&#x1F4E6;</div>
+        <h3>SharedPreferences</h3>
+        <p>Lightweight local storage for offline data</p>
+      </div>
+      <div class="tech-item">
+        <div class="tech-icon">&#x1F4CA;</div>
+        <h3>SQLite / Drift</h3>
+        <p>Structured data for complex apps</p>
+      </div>
+      <div class="tech-item">
+        <div class="tech-icon">&#x1F527;</div>
+        <h3>Provider / Riverpod</h3>
+        <p>State management for reactive UIs</p>
+      </div>
+      <div class="tech-item">
+        <div class="tech-icon">&#x1F680;</div>
+        <h3>Firebase</h3>
+        <p>Crashlytics and analytics (opt-in only)</p>
+      </div>
+      <div class="tech-item">
+        <div class="tech-icon">&#x1F512;</div>
+        <h3>End-to-End Privacy</h3>
+        <p>No data ever leaves your device</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Categories -->
+<div class="categories section-pad" id="categories">
+  <div class="container">
+    <div class="section-header">
+      <span class="overline">Browse by Category</span>
+      <h2>My Apps</h2>
+      <p>From stable releases to apps under development</p>
+    </div>
+    <div class="cat-grid">
+
+      <div class="cat-card public">
+        <span class="cat-badge badge-public">Public</span>
+        <h3>Published on Play Store</h3>
+        <p>Stable releases available for everyone. Download and start using immediately.</p>
+        <span class="cat-count">2 apps available</span>
+        <a class="cat-btn cat-btn-public" href="apps/public.html">View Apps &rarr;</a>
+      </div>
+
+      <div class="cat-card testing">
+        <span class="cat-badge badge-testing">Early Access</span>
+        <h3>Under Testing</h3>
+        <p>Beta versions being tested before public release. Join the tester's group to get access.</p>
+        <span class="cat-count">3 apps in testing</span>
+        <a class="cat-btn cat-btn-testing" href="apps/testing.html">View Apps &rarr;</a>
+      </div>
+
+      <div class="cat-card dev">
+        <span class="cat-badge badge-dev">In Development</span>
+        <h3>Coming Soon</h3>
+        <p>Apps currently being built. Get a sneak peek at what's coming next.</p>
+        <span class="cat-count">4 apps in progress</span>
+        <a class="cat-btn cat-btn-dev" href="apps/development.html">View Roadmap &rarr;</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="faq section-pad">
+  <div class="container">
+    <div class="section-header">
+      <span class="overline">FAQ</span>
+      <h2>Common Questions</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q">Are the apps really free?<span class="faq-arrow">&#9662;</span></button>
+        <div class="faq-a"><p>Yes, all apps are completely free with no hidden charges, subscriptions, or in-app purchases required for core features.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Is my data safe?<span class="faq-arrow">&#9662;</span></button>
+        <div class="faq-a"><p>Absolutely. All apps are 100% offline. Your data never leaves your device — no accounts, no cloud sync, no tracking.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What does "Early Access" mean?<span class="faq-arrow">&#9662;</span></button>
+        <div class="faq-a"><p>Early Access apps are beta versions being tested before public release. Join the tester's group to try them before everyone else.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Can I request a feature?<span class="faq-arrow">&#9662;</span></button>
+        <div class="faq-a"><p>Of course! Reach out via email or join the tester's group. I build apps based on real user needs.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Which Android versions are supported?<span class="faq-arrow">&#9662;</span></button>
+        <div class="faq-a"><p>All apps support Android 7.0 (Nougat) and above.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Hari Prasad Upadhyay</h3>
+        <p>Building offline-first Android tools that solve real problems. Simple, private, and free.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Apps</h4>
+        <a href="apps/public.html">Published Apps</a>
+        <a href="apps/testing.html">Early Access</a>
+        <a href="apps/development.html">In Development</a>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <a href="https://groups.google.com/g/build--test-app-club" target="_blank">Tester's Group</a>
+        <a href="https://github.com/hpupadhyay" target="_blank">GitHub</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:hariprasadupadhyay2@gmail.com">hariprasadupadhyay2@gmail.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Hari Prasad Upadhyay</p>
+    </div>
   </div>
 </footer>
+
+<script>
+// Nav scroll effect
+window.addEventListener('scroll', function() {
+  document.querySelector('.nav').classList.toggle('scrolled', window.scrollY > 20);
+});
+// FAQ accordion
+document.querySelectorAll('.faq-q').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var item = this.parentElement;
+    var wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); });
+    if (!wasOpen) item.classList.add('open');
+  });
+});
+</script>
 
 </body>
 </html>

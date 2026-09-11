@@ -5,17 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Expense Tracker — Hari Prasad Upadhyay</title>
 <link rel="stylesheet" href="../css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
+<nav class="nav">
   <div class="container">
-    <h1>Hari Prasad Upadhyay</h1>
-    <nav>
-      <a href="../index.html">Apps</a>
-    </nav>
+    <a href="../index.html" class="nav-brand"><span class="dot"></span>Hari Prasad Upadhyay</a>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="public.html">Apps</a>
+      <a href="testing.html">Testing</a>
+      <a href="development.html">In Progress</a>
+      <a href="https://groups.google.com/g/build--test-app-club" target="_blank" class="nav-cta">Join Tester's Group</a>
+    </div>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
   </div>
-</header>
+</nav>
 
 <div class="container app-page">
   <a class="back" href="../index.html">&larr; All Apps</a>
@@ -24,26 +31,39 @@
     <img class="icon" src="../assets/expense-tracker.png" alt="Expense Tracker icon">
     <div>
       <h2>Expense Tracker</h2>
-      <p>Track daily expenses and income with ease</p>
-      <a class="btn" href="https://play.google.com/store/apps/details?id=com.moneytracker.exp">Get on Play Store</a>
+      <p>Smart Personal Finance Manager</p>
+      <a class="btn btn-early" href="https://play.google.com/store/apps/details?id=com.moneytracker.exp" target="_blank">Early Access — Testing</a>
+      <a class="btn" href="https://groups.google.com/g/build--test-app-club" target="_blank">Join Tester's Group</a>
     </div>
   </div>
 
   <div class="section">
     <h3>About</h3>
-    <p>Expense Tracker is a simple, offline-first app to manage your daily finances. All your data stays on your device — no accounts, no cloud, no sign-in required.</p>
+    <p>Expense Tracker is a 100% offline personal finance manager that helps you track expenses, manage accounts, and take control of your money. All data stays on your device — no accounts, no cloud, no sign-in required.</p>
   </div>
 
   <div class="section">
     <h3>Features</h3>
     <ul>
-      <li>Add income and expense entries quickly</li>
-      <li>Organize by categories</li>
-      <li>View daily, weekly, and monthly summaries</li>
-      <li>Export data to CSV</li>
-      <li>Fully offline — your data never leaves your device</li>
-      <li>Dark mode support</li>
+      <li><strong>Account Management</strong> — Bank, Cash, Wallet, Credit Card, Investment &amp; Liability tracking</li>
+      <li><strong>Transaction Tracking</strong> — Expenses, Income &amp; Transfers with multi-line support</li>
+      <li><strong>Credit Card Management</strong> — Statement cycles, due dates, payment tracking &amp; category breakdown</li>
+      <li><strong>Loans &amp; EMIs</strong> — Loan taken &amp; given tracking with EMI scheduling</li>
+      <li><strong>Forecasting</strong> — Monthly cash flow forecast with opening balance, expenses, EMIs &amp; investments</li>
+      <li><strong>Balance Sheet</strong> — Assets, Liabilities &amp; Equity with opening balance support</li>
+      <li><strong>Reports &amp; Charts</strong> — Daily/Weekly/Monthly expense charts, merchant reports &amp; CC statements</li>
+      <li><strong>Data Export</strong> — Multi-sheet CSV export (Expenses, Income, Transfers, EMIs, Given Loans)</li>
+      <li><strong>Backup &amp; Restore</strong> — Local backup that survives uninstall + optional Google Drive backup</li>
+      <li><strong>Budget Management</strong> — Set monthly budgets with progress alerts</li>
+      <li><strong>Recurring Transactions</strong> — Daily, weekly, monthly, or yearly recurring entries</li>
+      <li><strong>Dark &amp; Light Theme</strong> — Multiple currency support</li>
+      <li><strong>100% Offline</strong> — All data stored locally via SharedPreferences</li>
     </ul>
+  </div>
+
+  <div class="section">
+    <h3>Backup &amp; Restore</h3>
+    <p>Backups are saved to your device's shared storage so they survive app uninstall and reinstall. You can also optionally back up to your personal Google Drive. On reinstall, the app detects existing backups and offers to restore them.</p>
   </div>
 
   <div class="section">
@@ -57,15 +77,21 @@
 
   <div class="section">
     <h3>Privacy</h3>
-    <p><a href="https://hpupadhyay.github.io/privacy-expense-tracker.html">Privacy Policy</a></p>
+    <p><a href="../privacy-expense-tracker.html">Privacy Policy</a></p>
   </div>
 </div>
 
-<footer>
+<footer class="footer">
   <div class="container">
-    <p>&copy; 2026 Hari Prasad Upadhyay &nbsp;|&nbsp; <a href="mailto:hariprasadupadhyay2@gmail.com">hariprasadupadhyay2@gmail.com</a></p>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Hari Prasad Upadhyay</p>
+      <div class="footer-social">
+        <a href="https://github.com/hpupadhyay" target="_blank">GH</a>
+      </div>
+    </div>
   </div>
 </footer>
+<script>window.addEventListener('scroll',function(){document.querySelector('.nav').classList.toggle('scrolled',window.scrollY>20)});</script>
 
 </body>
 </html>

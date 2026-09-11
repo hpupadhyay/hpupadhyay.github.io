@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apps Under Development — Hari Prasad Upadhyay</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a href="../index.html" class="nav-brand">Hari Prasad Upadhyay</a>
+    <div class="nav-links">
+      <a href="public.html">Apps</a>
+      <a href="testing.html">Testing</a>
+      <a href="development.html" class="active">In Progress</a>
+      <a href="https://groups.google.com/g/build--test-app-club" target="_blank" class="nav-cta">Join Tester's Group</a>
+    </div>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<main>
+<div class="container">
+  <div class="page-header">
+    <h2>Under Development</h2>
+    <p>Apps currently being built. Get a sneak peek at what's coming next.</p>
+  </div>
+  <div class="apps-grid">
+    <div class="app-card">
+      <a class="card-link" href="fasting-tracker.html"></a>
+      <img class="icon" src="../assets/expense-tracker.png" alt="Fasting & Water Tracker icon">
+      <h3>Fasting &amp; Water Tracker</h3>
+      <p>Intermittent fasting timer and daily water intake tracker with charts and notifications.</p>
+      <span class="btn btn-soon">Coming Soon</span>
+      <a class="btn btn-outline" href="fasting-tracker.html">Details</a>
+    </div>
+    <div class="app-card">
+      <a class="card-link" href="bhargavi-erp.html"></a>
+      <img class="icon" src="../assets/expense-tracker.png" alt="Bhargavi ERP icon">
+      <h3>Bhargavi ERP</h3>
+      <p>Mobile-first accounting app with double-entry bookkeeping, GST, TDS, and biometric auth.</p>
+      <span class="btn btn-soon">Coming Soon</span>
+      <a class="btn btn-outline" href="bhargavi-erp.html">Details</a>
+    </div>
+    <div class="app-card">
+      <a class="card-link" href="restaurant-management.html"></a>
+      <img class="icon" src="../assets/expense-tracker.png" alt="Restaurant Management icon">
+      <h3>Restaurant Management</h3>
+      <p>Complete restaurant management system — orders, kitchen display, billing, and real-time sync.</p>
+      <span class="btn btn-soon">Coming Soon</span>
+      <a class="btn btn-outline" href="restaurant-management.html">Details</a>
+    </div>
+    <div class="app-card">
+      <a class="card-link" href="ration-karo.html"></a>
+      <img class="icon" src="../assets/expense-tracker.png" alt="Ration Karo icon">
+      <h3>Ration Karo</h3>
+      <p>Compare grocery prices across quick commerce apps — Blinkit, Zepto, and more.</p>
+      <span class="btn btn-soon">Coming Soon</span>
+      <a class="btn btn-outline" href="ration-karo.html">Details</a>
+    </div>
+  </div>
+</div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <p>&copy; 2026 Hari Prasad Upadhyay</p>
+    </div>
+  </div>
+</footer>
+<script>window.addEventListener('scroll',function(){document.querySelector('.nav').classList.toggle('scrolled',window.scrollY>20)});</script>
+</body>
+</html>
