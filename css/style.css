@@ -364,7 +364,7 @@ img { max-width: 100%; height: auto; display: block; }
 .app-card .btn {
   display: inline-flex; align-items: center; gap: 4px;
   padding: 8px 16px; border-radius: 7px; font-size: 0.82em; font-weight: 600; transition: all 0.2s;
-  position: relative; z-index: 0;
+  position: relative; z-index: 2;
 }
 .app-card .btn-play { background: #1a73e8; color: #fff; }
 .app-card .btn-play:hover { background: #1557b0; }
