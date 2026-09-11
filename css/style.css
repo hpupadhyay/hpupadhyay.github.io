@@ -392,7 +392,7 @@ img { max-width: 100%; height: auto; display: block; }
    RESPONSIVE — Mobile (max-width: 640px)
    ========================================== */
 @media (max-width: 640px) {
-  .container { padding: 0 16px; }
+  .container { padding: 0 24px; }
   .nav .container { height: 48px; }
   .nav-links {
     display: none; position: absolute; top: 48px; left: 0; right: 0;
