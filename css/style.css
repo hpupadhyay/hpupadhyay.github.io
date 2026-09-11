@@ -412,9 +412,10 @@ img { max-width: 100%; height: auto; display: block; }
   .stat-number { font-size: 1.6em; }
   .stat-label { font-size: 0.72em; }
   .why, .categories, .faq, .how, .previews, .techstack { padding: 40px 0; }
+  .why-card, .how-step, .tech-item { text-align: center; }
   .how-steps { grid-template-columns: 1fr; gap: 12px; max-width: 400px; margin: 0 auto; }
   .preview-scroll { gap: 14px; }
-  .preview-card { flex: 0 0 180px; }
+  .preview-card { flex: 0 0 180px; text-align: center; }
   .preview-phone { width: 150px; height: 260px; }
   .tech-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
   .why-grid, .cat-grid { grid-template-columns: 1fr; gap: 12px; max-width: 400px; margin: 0 auto; }
@@ -422,7 +423,7 @@ img { max-width: 100%; height: auto; display: block; }
   .app-card { padding: 18px; }
   .app-card .btn { display: flex; justify-content: center; }
   .app-card .btn + .btn { margin-top: 6px; }
-  .page-header { padding: 60px 0 16px; margin-top: 48px; }
+  .page-header { padding: 60px 0 16px; margin-top: 48px; text-align: center; }
   .page-header h2 { font-size: 1.4em; }
   .app-page { padding: 60px 0 32px; margin-top: 48px; }
   .app-header { flex-direction: column; text-align: center; gap: 12px; }
@@ -430,13 +431,11 @@ img { max-width: 100%; height: auto; display: block; }
   .app-header h2 { font-size: 1.3em; }
   .app-header .btn { display: flex; justify-content: center; }
   .app-header .btn + .btn { margin-top: 6px; }
+  .detail-section { text-align: left; }
+  .detail-section li { padding-left: 4px; }
   .screenshots img { height: 200px; }
   .faq-q { font-size: 0.9em; padding: 14px 16px; }
   .faq-a p { padding: 0 16px 14px; font-size: 0.85em; }
-  .newsletter { padding: 40px 16px; }
-  .newsletter h2 { font-size: 1.3em; }
-  .newsletter-form { flex-direction: column; }
-  .newsletter-form .btn-sub { width: 100%; }
   .cta-section { padding: 36px 16px; }
   .cta-section h2 { font-size: 1.3em; }
   .footer { padding: 32px 0 16px; }
