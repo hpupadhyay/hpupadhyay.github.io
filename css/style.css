@@ -98,7 +98,8 @@ img { max-width: 100%; height: auto; display: block; }
 /* ==========================================
    STATS BAR
    ========================================== */
-.stats-bar { display: grid; grid-template-columns: repeat(4, 1fr); background: #fff; border-bottom: 1px solid #eee; }
+.stats-bar { background: #fff; border-bottom: 1px solid #eee; }
+.stats-inner { display: grid; grid-template-columns: repeat(4, 1fr); }
 .stat-item { text-align: center; padding: 28px 16px; border-right: 1px solid #f0f0f0; }
 .stat-item:last-child { border-right: none; }
 .stat-item:hover { background: #fafbff; }
@@ -469,7 +470,7 @@ img { max-width: 100%; height: auto; display: block; }
   .hero .subtitle { font-size: 0.9em; }
   .hero-actions { flex-direction: column; align-items: center; }
   .btn-primary, .btn-secondary { width: 100%; max-width: 260px; justify-content: center; }
-  .stats-bar { grid-template-columns: repeat(2, 1fr); }
+  .stats-inner { grid-template-columns: repeat(2, 1fr); }
   .stat-item { padding: 20px 12px; }
   .stat-number { font-size: 1.6em; }
   .stat-label { font-size: 0.72em; }
