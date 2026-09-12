@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MRP & Profit Calculator — Hari Prasad Upadhyay</title>
+<title>MRP & Profit Calculator  -  Hari Prasad Upadhyay</title>
 <link rel="stylesheet" href="../css/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -25,52 +25,120 @@
 </nav>
 
 <div class="container app-page">
-  <a class="back" href="../index.html">&larr; All Apps</a>
+  <a class="back" href="testing.html">&larr; Early Access</a>
 
-  <div class="app-header">
+  <div class="app-hero">
     <img class="icon" src="../assets/mrp-calculator.png" alt="MRP & Profit Calculator icon">
-    <div>
+    <div class="app-hero-info">
       <h2>MRP &amp; Profit Calculator</h2>
-      <p>Calculate MRP, profit margins, and discounts</p>
-      <a class="btn" href="https://play.google.com/store/apps/details?id=com.mrpcalculator.mrp_calculator">Get on Play Store</a>
+      <p class="tagline">Import MRP, purchase cost &amp; reverse MRP analyzer</p>
+      <a class="btn btn-early" href="https://play.google.com/store/apps/details?id=com.mrpcalculator.mrp_calculator">Early Access  -  Testing</a>
     </div>
   </div>
 
-  <div class="section">
-    <h3>About</h3>
-    <p>MRP &amp; Profit Calculator is a quick tool for retailers, wholesalers, and business owners to calculate Maximum Retail Price, profit margins, discounts, and markup percentages.</p>
-  </div>
+  <div class="app-body">
+    <div class="app-content">
+      <div class="section">
+        <h3>About</h3>
+        <p>Business pricing calculator for importers, distributors, wholesalers, retailers, and online sellers. Calculate MRP using six pricing tools across four import strategies, two local strategies, and two cloud/listing strategies  -  with reverse analysis, multi-currency support, and PDF export.</p>
+      </div>
 
-  <div class="section">
-    <h3>Features</h3>
-    <ul>
-      <li>Calculate MRP from cost and margin</li>
-      <li>Profit margin and markup calculator</li>
-      <li>Discount calculator — find final price after discount</li>
-      <li>Break-even analysis</li>
-      <li>Save calculation history locally</li>
-      <li>Support for multiple currencies</li>
-      <li>Clean, ad-free interface</li>
-    </ul>
-  </div>
+      <div class="section">
+        <h3>Import MRP Calculator</h3>
+        <ul>
+          <li>Four pricing strategies calculated simultaneously  -  company margin on Landing/Selling Price × dealer margin on MRP/Selling Price</li>
+          <li>Full breakdown  -  Base INR, customs, freight, landing cost, company margin, selling price, GST, MRP, dealer invoice, profit per unit</li>
+          <li>Strategy comparison table with Best/Good/Average rank badges</li>
+          <li>Unit-based total profit across all strategies</li>
+        </ul>
+      </div>
 
-  <div class="section">
-    <h3>Screenshots</h3>
-    <div class="screenshots">
-      <img src="../assets/mrp-calc-s1.jpg" alt="Screenshot 1">
-      <img src="../assets/mrp-calc-s2.jpg" alt="Screenshot 2">
-      <img src="../assets/mrp-calc-s3.jpg" alt="Screenshot 3">
+      <div class="section">
+        <h3>Local Calculator</h3>
+        <ul>
+          <li>Two strategies  -  company margin on Landing Cost vs Selling Price</li>
+          <li>Handles GST-registered and non-registered companies</li>
+          <li>Other expenses  -  percentage and fixed amount</li>
+          <li>Full breakdown  -  purchase cost, landing cost, selling price, GST, MRP, profit per unit</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Cloud / Listing Price Calculator</h3>
+        <ul>
+          <li>Two strategies for online marketplace listing price</li>
+          <li>Platform deductions  -  commission, commission GST, freight, freight GST, total ITC recoverable</li>
+          <li>Reverse calculation of listing price when commission and freight are percentages of the listing price itself</li>
+          <li>GST-registered toggle with Input Tax Credit recovery</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Reverse Analyzers</h3>
+        <ul>
+          <li>Import Cost Analyzer  -  given a fixed MRP, solve for company margin, dealer margin, or base price</li>
+          <li>Local Cost Analyzer  -  solve for company margin or purchase cost</li>
+          <li>Listing Price Analyzer  -  solve for company margin or purchase cost with full platform deduction breakdown</li>
+          <li>Each analyzer works across all applicable strategies</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Currency & Tax</h3>
+        <ul>
+          <li>17 currencies  -  INR, USD, EUR, GBP, AED, SAR, BDT, PKR, LKR, NGN, ZAR, KES, CNY, JPY, AUD, CAD, SGD</li>
+          <li>Configurable home currency and import currency with editable exchange rate</li>
+          <li>Customizable tax label  -  rename to GST, VAT, or any country-specific term</li>
+          <li>GST-registered toggle  -  ITC on commission and freight GST when registered</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Export & History</h3>
+        <ul>
+          <li>PDF export  -  professional A4 reports with strategy comparison, breakdown, and recommendations</li>
+          <li>Copy to clipboard  -  formatted text for messaging and email</li>
+          <li>Calculation history  -  save, rename, filter, and re-export</li>
+          <li>Strategy selection filter  -  include only selected strategies in PDF and copy</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Formula Guide</h3>
+        <ul>
+          <li>4-tab educational guide  -  Import MRP, Listing Price, Strategy Compare, Visual Flow</li>
+          <li>Step-by-step formulas and color-coded flow diagrams</li>
+          <li>Covers forward and reverse calculations with ITC recovery</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="app-screenshots">
+      <h3>Screenshots</h3>
+      <div class="screenshots-wrap">
+        <div class="screenshots" id="screenshots">
+          <div class="screenshots-track" id="track">
+            <img src="../assets/mrp-calc-s1.jpg" alt="Screenshot 1" onclick="openLightbox(this.src)">
+            <img src="../assets/mrp-calc-s2.jpg" alt="Screenshot 2" onclick="openLightbox(this.src)">
+            <img src="../assets/mrp-calc-s3.jpg" alt="Screenshot 3" onclick="openLightbox(this.src)">
+            <img src="../assets/mrp-calc-s4.jpg" alt="Screenshot 4" onclick="openLightbox(this.src)">
+            <img src="../assets/mrp-calc-s5.jpg" alt="Screenshot 5" onclick="openLightbox(this.src)">
+          </div>
+        </div>
+        <div class="screenshots-nav">
+          <button onclick="scrollShot(-1)">&#10094;</button>
+          <button onclick="scrollShot(1)">&#10095;</button>
+        </div>
+      </div>
     </div>
   </div>
+</div>
 
-  <div class="section">
-    <h3>Legal</h3>
-    <p>
-      <a href="https://hpupadhyay.github.io/privacy-mrp-calculator.html">Privacy Policy</a> &nbsp;|&nbsp;
-      <a href="https://hpupadhyay.github.io/terms-mrp-calculator.html">Terms of Use</a> &nbsp;|&nbsp;
-      <a href="https://hpupadhyay.github.io/disclaimer-mrp-calculator.html">Disclaimer</a>
-    </p>
-  </div>
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+  <button class="lightbox-prev" onclick="event.stopPropagation();navLightbox(-1)">&#10094;</button>
+  <button class="lightbox-next" onclick="event.stopPropagation();navLightbox(1)">&#10095;</button>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="Full screen screenshot" onclick="event.stopPropagation()">
 </div>
 
 <footer class="footer">
@@ -83,7 +151,18 @@
     </div>
   </div>
 </footer>
-<script>window.addEventListener('scroll',function(){document.querySelector('.nav').classList.toggle('scrolled',window.scrollY>20)});</script>
-
+<script>
+var lbImages=[],lbIdx=0,realCount=0,currentIdx=0,wrapping=false;
+window.addEventListener('scroll',function(){document.querySelector('.nav').classList.toggle('scrolled',window.scrollY>20)});
+function collectImages(){lbImages=[];document.querySelectorAll('.screenshots-track img').forEach(function(img){if(!img.classList.contains('clone'))lbImages.push(img.src)})}
+function openLightbox(src){collectImages();lbIdx=lbImages.indexOf(src);document.getElementById('lightbox-img').src=src;document.getElementById('lightbox').classList.add('open');document.body.style.overflow='hidden'}
+function closeLightbox(){document.getElementById('lightbox').classList.remove('open');document.body.style.overflow=''}
+function navLightbox(dir){lbIdx=(lbIdx+dir+lbImages.length)%lbImages.length;document.getElementById('lightbox-img').src=lbImages[lbIdx]}
+document.addEventListener('keydown',function(e){if(!document.getElementById('lightbox').classList.contains('open'))return;if(e.key==='Escape')closeLightbox();if(e.key==='ArrowLeft')navLightbox(-1);if(e.key==='ArrowRight')navLightbox(1)});
+function goToSlide(idx,animate){var c=document.getElementById('track');if(!c)return;if(!animate)c.style.transition='none';c.style.transform='translateX(-'+(idx*100)+'%)';if(!animate)c.offsetHeight;if(!animate)c.style.transition='transform 0.4s ease-in-out'}
+function scrollShot(dir){if(wrapping)return;var c=document.getElementById('track'),n=realCount;currentIdx+=dir;goToSlide(currentIdx+1,true);if((dir>0&&currentIdx>=n)||(dir<0&&currentIdx<0)){wrapping=true;setTimeout(function(){currentIdx=dir>0?0:n-1;goToSlide(currentIdx+1,false);wrapping=false},420)}}
+document.addEventListener('DOMContentLoaded',function(){var c=document.getElementById('track'),imgs=c.querySelectorAll('img');realCount=imgs.length;var first=imgs[0].cloneNode(true);first.classList.add('clone');c.appendChild(first);var last=imgs[imgs.length-1].cloneNode(true);last.classList.add('clone');c.insertBefore(last,imgs[0]);currentIdx=0;goToSlide(1,false)});
+document.addEventListener('DOMContentLoaded',function(){total=document.getElementById('screenshots').querySelectorAll('img').length});
+</script>
 </body>
 </html>

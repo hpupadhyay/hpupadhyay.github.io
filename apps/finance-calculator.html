@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Finance Calculator — Hari Prasad Upadhyay</title>
+<title>Finance Calculator  -  Hari Prasad Upadhyay</title>
 <link rel="stylesheet" href="../css/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -25,49 +25,115 @@
 </nav>
 
 <div class="container app-page">
-  <a class="back" href="../index.html">&larr; All Apps</a>
+  <a class="back" href="testing.html">&larr; Early Access</a>
 
-  <div class="app-header">
+  <div class="app-hero">
     <img class="icon" src="../assets/finance-calculator.png" alt="Finance Calculator icon">
-    <div>
+    <div class="app-hero-info">
       <h2>Finance Calculator</h2>
-      <p>Quick financial calculations for everyday use</p>
-      <a class="btn" href="https://play.google.com/store/apps/details?id=com.financalc.calculator">Get on Play Store</a>
+      <p class="tagline">16 financial tools for Indian users</p>
+      <a class="btn btn-early" href="https://play.google.com/store/apps/details?id=com.financalc.calculator">Early Access  -  Testing</a>
     </div>
   </div>
 
-  <div class="section">
-    <h3>About</h3>
-    <p>Finance Calculator is a multi-purpose financial tool that helps you with EMI, GST, investment, arbitrage, loan comparisons, and more — all in one app.</p>
-  </div>
+  <div class="app-body">
+    <div class="app-content">
+      <div class="section">
+        <h3>About</h3>
+        <p>16 offline financial tools covering loans, EMI, investments, refinancing, arbitrage, debt management, insurance, and more. All calculations performed on-device with PDF export, funnel charts, and calculation history.</p>
+      </div>
 
-  <div class="section">
-    <h3>Features</h3>
-    <ul>
-      <li>EMI Calculator — calculate equated monthly installments</li>
-      <li>GST Calculator — compute GST amounts instantly</li>
-      <li>Investment Calculator — project returns on investments</li>
-      <li>Arbitrage Calculator — find price differences across platforms</li>
-      <li>Loan Comparison — compare flat vs reducing interest rates</li>
-      <li>Business Calculator — margin, markup, and break-even tools</li>
-      <li>Refinance Calculator — evaluate refinancing options</li>
-      <li>Fully offline — no internet required</li>
-    </ul>
-  </div>
+      <div class="section">
+        <h3>Loan & EMI Tools</h3>
+        <ul>
+          <li>EMI Calculator  -  monthly EMI, amortization schedule, prepayment savings, moratorium support</li>
+          <li>Loan Amount Calculator  -  reverse-calculate max loan from desired EMI</li>
+          <li>Tenure Calculator  -  find repayment period from loan amount and EMI</li>
+          <li>Interest Rate Calculator  -  reverse-calculate rate using binary search</li>
+          <li>All 4 support processing fee (deducted or added), prepayment, and monthly/yearly views</li>
+        </ul>
+      </div>
 
-  <div class="section">
-    <h3>Screenshots</h3>
-    <div class="screenshots">
-      <img src="../assets/finance-calc-s1.jpg" alt="Screenshot 1">
-      <img src="../assets/finance-calc-s2.jpg" alt="Screenshot 2">
-      <img src="../assets/finance-calc-s3.jpg" alt="Screenshot 3">
+      <div class="section">
+        <h3>Investment Suite</h3>
+        <ul>
+          <li>SIP Calculator  -  monthly SIP maturity with wealth gain and multiplier</li>
+          <li>Compound Interest  -  lumpsum maturity with annual compounding</li>
+          <li>FD / RD Calculator  -  five payout frequencies: At Maturity, Quarterly, Monthly, Half-Yearly, Yearly</li>
+          <li>Inflation Calculator  -  future value, present value, and purchasing power comparison</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Loan Comparison & Decision Tools</h3>
+        <ul>
+          <li>Compare Loans  -  side-by-side comparison with EMI, total interest, and recommendation</li>
+          <li>Arbitrage Engine  -  multi-strategy loan vs investment comparison with 1–5 portfolios</li>
+          <li>Refinance Calculator  -  current loans vs new plan with foreclosure fees and net savings</li>
+          <li>Refinance vs Business  -  decision aid with risk tolerance and confidence level</li>
+          <li>Floating to Fixed Rate Converter  -  break-even analysis and "What if?" scenarios</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Planning & Analysis</h3>
+        <ul>
+          <li>Retirement Planner  -  corpus needed, monthly savings, sustainable withdrawal</li>
+          <li>Goal Planner  -  inflation-adjusted goal with SIP/lumpsum needed</li>
+          <li>Debt Payoff Planner  -  Snowball vs Avalanche vs Minimum strategies</li>
+          <li>XIRR Calculator  -  annualized return for irregular cash flows</li>
+          <li>Loan Affordability  -  max loan from income with DTI limit</li>
+          <li>Life Cover Calculator  -  DIME-based insurance need analysis</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Additional Tools</h3>
+        <ul>
+          <li>Lumpsum Calculator  -  one-time investment maturity with inflation adjustment</li>
+          <li>CAGR Calculator  -  compound annual growth rate with absolute return</li>
+          <li>Simple Interest Calculator  -  basic interest with years or months support</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Export & History</h3>
+        <ul>
+          <li>PDF export on every calculator  -  formatted results, tables, charts, and formulas</li>
+          <li>CSV export for loan amortization schedules</li>
+          <li>Funnel charts on every result screen  -  Principal vs Interest, Invested vs Gain</li>
+          <li>Calculation history saved locally  -  viewable from home screen</li>
+          <li>Currency selection  -  INR, USD, EUR, GBP with configurable decimal precision</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="app-screenshots">
+      <h3>Screenshots</h3>
+      <div class="screenshots-wrap">
+        <div class="screenshots" id="screenshots">
+          <div class="screenshots-track" id="track">
+            <img src="../assets/finance-calc-s1.jpg" alt="Screenshot 1" onclick="openLightbox(this.src)">
+            <img src="../assets/finance-calc-s2.jpg" alt="Screenshot 2" onclick="openLightbox(this.src)">
+            <img src="../assets/finance-calc-s3.jpg" alt="Screenshot 3" onclick="openLightbox(this.src)">
+            <img src="../assets/finance-calc-s4.jpg" alt="Screenshot 4" onclick="openLightbox(this.src)">
+            <img src="../assets/finance-calc-s5.jpg" alt="Screenshot 5" onclick="openLightbox(this.src)">
+          </div>
+        </div>
+        <div class="screenshots-nav">
+          <button onclick="scrollShot(-1)">&#10094;</button>
+          <button onclick="scrollShot(1)">&#10095;</button>
+        </div>
+      </div>
     </div>
   </div>
+</div>
 
-  <div class="section">
-    <h3>Privacy</h3>
-    <p><a href="https://hpupadhyay.github.io/privacy-finance-calculator.html">Privacy Policy</a></p>
-  </div>
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+  <button class="lightbox-prev" onclick="event.stopPropagation();navLightbox(-1)">&#10094;</button>
+  <button class="lightbox-next" onclick="event.stopPropagation();navLightbox(1)">&#10095;</button>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="Full screen screenshot" onclick="event.stopPropagation()">
 </div>
 
 <footer class="footer">
@@ -80,7 +146,18 @@
     </div>
   </div>
 </footer>
-<script>window.addEventListener('scroll',function(){document.querySelector('.nav').classList.toggle('scrolled',window.scrollY>20)});</script>
-
+<script>
+var lbImages=[],lbIdx=0,realCount=0,currentIdx=0,wrapping=false;
+window.addEventListener('scroll',function(){document.querySelector('.nav').classList.toggle('scrolled',window.scrollY>20)});
+function collectImages(){lbImages=[];document.querySelectorAll('.screenshots-track img').forEach(function(img){if(!img.classList.contains('clone'))lbImages.push(img.src)})}
+function openLightbox(src){collectImages();lbIdx=lbImages.indexOf(src);document.getElementById('lightbox-img').src=src;document.getElementById('lightbox').classList.add('open');document.body.style.overflow='hidden'}
+function closeLightbox(){document.getElementById('lightbox').classList.remove('open');document.body.style.overflow=''}
+function navLightbox(dir){lbIdx=(lbIdx+dir+lbImages.length)%lbImages.length;document.getElementById('lightbox-img').src=lbImages[lbIdx]}
+document.addEventListener('keydown',function(e){if(!document.getElementById('lightbox').classList.contains('open'))return;if(e.key==='Escape')closeLightbox();if(e.key==='ArrowLeft')navLightbox(-1);if(e.key==='ArrowRight')navLightbox(1)});
+function goToSlide(idx,animate){var c=document.getElementById('track');if(!c)return;if(!animate)c.style.transition='none';c.style.transform='translateX(-'+(idx*100)+'%)';if(!animate)c.offsetHeight;if(!animate)c.style.transition='transform 0.4s ease-in-out'}
+function scrollShot(dir){if(wrapping)return;var c=document.getElementById('track'),n=realCount;currentIdx+=dir;goToSlide(currentIdx+1,true);if((dir>0&&currentIdx>=n)||(dir<0&&currentIdx<0)){wrapping=true;setTimeout(function(){currentIdx=dir>0?0:n-1;goToSlide(currentIdx+1,false);wrapping=false},420)}}
+document.addEventListener('DOMContentLoaded',function(){var c=document.getElementById('track'),imgs=c.querySelectorAll('img');realCount=imgs.length;var first=imgs[0].cloneNode(true);first.classList.add('clone');c.appendChild(first);var last=imgs[imgs.length-1].cloneNode(true);last.classList.add('clone');c.insertBefore(last,imgs[0]);currentIdx=0;goToSlide(1,false)});
+document.addEventListener('DOMContentLoaded',function(){total=document.getElementById('screenshots').querySelectorAll('img').length});
+</script>
 </body>
 </html>

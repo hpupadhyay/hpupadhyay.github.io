@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bhargavi ERP — Hari Prasad Upadhyay</title>
+<title>Bhargavi ERP - Hari Prasad Upadhyay</title>
 <link rel="stylesheet" href="../css/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
       <a href="../index.html">Home</a>
       <a href="public.html">Apps</a>
       <a href="testing.html">Testing</a>
-      <a href="development.html">In Progress</a>
+      <a href="development.html" class="active">In Progress</a>
       <a href="https://groups.google.com/g/build--test-app-club" target="_blank" class="nav-cta">Join Tester's Group</a>
     </div>
     <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
@@ -25,38 +25,76 @@
 </nav>
 
 <div class="container app-page">
-  <a class="back" href="development.html">&larr; Under Development</a>
+  <a class="back" href="development.html">&larr; In Progress</a>
 
-  <div class="app-header">
-    <img class="icon" src="../assets/expense-tracker.png" alt="Bhargavi ERP icon">
-    <div>
+  <div class="app-hero">
+    <img class="icon" src="../assets/bhargavi-erp.png" alt="Bhargavi ERP icon">
+    <div class="app-hero-info">
       <h2>Bhargavi ERP</h2>
-      <p>Mobile-First Accounting &amp; ERP</p>
-      <span class="category-badge badge-dev" style="margin-top:12px;">Under Development</span>
+      <p class="tagline">School management - fees, attendance, reports</p>
+      <span class="status-badge status-development">Built - Pre-Release</span>
     </div>
   </div>
 
-  <div class="section">
-    <h3>About</h3>
-    <p>Bhargavi ERP is a professional-grade accounting and ERP app designed for small businesses. Built with modern tools like Drift (SQLite) and Riverpod for a fast, reliable experience.</p>
-  </div>
+  <div class="app-body">
+    <div class="app-content">
+      <div class="section">
+        <h3>About</h3>
+        <p>Built a complete school management system for Bhargavi. Handles fee collection, student attendance, exam results, and generates detailed reports - designed for non-technical school staff in small towns.</p>
+      </div>
 
-  <div class="section">
-    <h3>Planned Features</h3>
-    <ul>
-      <li><strong>Double-Entry Bookkeeping</strong> — Professional accounting with proper journal entries</li>
-      <li><strong>GST Compliance</strong> — Auto-calculate GST, generate invoices</li>
-      <li><strong>TDS Management</strong> — Track TDS deductions and filings</li>
-      <li><strong>PDF &amp; Excel Export</strong> — Generate reports and statements</li>
-      <li><strong>HRM Features</strong> — Camera integration, GPS tracking for employees</li>
-      <li><strong>Biometric Auth</strong> — Secure login with fingerprint/face</li>
-      <li><strong>100% Offline</strong> — Works without internet, syncs later</li>
-    </ul>
-  </div>
+      <div class="section">
+        <h3>Student Management</h3>
+        <ul>
+          <li>Student registration with class and section assignment</li>
+          <li>Roll number auto-generation and manual override</li>
+          <li>Student profile with photo, parent info, and contact details</li>
+          <li>Active/inactive status toggle for transferred students</li>
+        </ul>
+      </div>
 
-  <div class="section">
-    <h3>Development Status</h3>
-    <p>Core architecture designed and database schema built. UI/UX and business logic in progress.</p>
+      <div class="section">
+        <h3>Fee Collection</h3>
+        <ul>
+          <li>Monthly fee structure setup per class</li>
+          <li>Fee collection with receipt generation</li>
+          <li>Due tracking with pending amount alerts</li>
+          <li>Concession and discount support</li>
+          <li>Daily collection report and pending dues report</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Attendance</h3>
+        <ul>
+          <li>Daily attendance marking per class</li>
+          <li>Present/Absent/Leave status tracking</li>
+          <li>Monthly attendance summary per student</li>
+          <li>Attendance percentage calculation</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Examinations & Reports</h3>
+        <ul>
+          <li>Exam marks entry for multiple subjects</li>
+          <li>Grade calculation based on marks</li>
+          <li>Report card generation with subject-wise marks</li>
+          <li>Class rank and percentage calculation</li>
+          <li>Printable report cards</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Staff & Reports</h3>
+        <ul>
+          <li>Staff salary management</li>
+          <li>Daily collection and expense reports</li>
+          <li>Student-wise fee reports</li>
+          <li>Class-wise performance reports</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -70,7 +108,8 @@
     </div>
   </div>
 </footer>
-<script>window.addEventListener('scroll',function(){document.querySelector('.nav').classList.toggle('scrolled',window.scrollY>20)});</script>
-
+<script>
+window.addEventListener('scroll',function(){document.querySelector('.nav').classList.toggle('scrolled',window.scrollY>20)});
+</script>
 </body>
 </html>

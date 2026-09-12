@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TDS Calculator India — Hari Prasad Upadhyay</title>
+<title>TDS Calculator India  -  Hari Prasad Upadhyay</title>
 <link rel="stylesheet" href="../css/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -25,48 +25,101 @@
 </nav>
 
 <div class="container app-page">
-  <a class="back" href="../index.html">&larr; All Apps</a>
+  <a class="back" href="public.html">&larr; Published Apps</a>
 
-  <div class="app-header">
+  <div class="app-hero">
     <img class="icon" src="../assets/tds-calculator.png" alt="TDS Calculator India icon">
-    <div>
+    <div class="app-hero-info">
       <h2>TDS Calculator India</h2>
-      <p>Calculate TDS deductions as per Indian tax rules</p>
-      <a class="btn" href="https://play.google.com/store/apps/details?id=com.tdscalculator.tds_calculator">Get on Play Store</a>
+      <p class="tagline">Calculate TDS deductions as per Indian tax rules</p>
+      <a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.tdscalculator.tds_calculator">Get on Play Store</a>
     </div>
   </div>
 
-  <div class="section">
-    <h3>About</h3>
-    <p>TDS Calculator India helps you quickly calculate Tax Deducted at Source (TDS) for various payment categories as per Indian Income-tax rules. Useful for accountants, businesses, and salaried professionals.</p>
-  </div>
+  <div class="app-body">
+    <div class="app-content">
+      <div class="section">
+        <h3>About</h3>
+        <p>Comprehensive offline TDS calculator for India covering all provisions under the Income Tax Act, 2025 (effective 1 April 2026). Built on the official TDS Calculator from the Income Tax Department  -  30+ sections, salary regime comparison, and a searchable rate chart.</p>
+      </div>
 
-  <div class="section">
-    <h3>Features</h3>
-    <ul>
-      <li>TDS calculation for multiple section categories</li>
-      <li>Support for resident and non-resident rates</li>
-      <li>PAN-based TDS rates (lower/higher deduction)</li>
-      <li>Surcharge and cess calculations</li>
-      <li>Quick and accurate results</li>
-      <li>Fully offline — no internet required</li>
-      <li>Simple, clean interface</li>
-    </ul>
-  </div>
+      <div class="section">
+        <h3>Non-Salary TDS Calculator</h3>
+        <ul>
+          <li>30+ TDS sections  -  EPF, insurance commission, brokerage, rent, property, mutual funds, interest, contractors, professionals, dividends, e-commerce, crypto, lottery, cash withdrawal, and more</li>
+          <li>7 deductee types  -  Individual, HUF, Domestic Company, Foreign Company, Firm/LLP, AOP/BOI/Trust, Government</li>
+          <li>Residential status  -  Resident, Non-Resident (NRI), Resident but Not Ordinarily Resident</li>
+          <li>PAN available toggle  -  applies Section 397 higher rate when PAN is missing</li>
+          <li>Annual aggregate amount for threshold checking across the full financial year</li>
+          <li>Custom TDS rate override for lower deduction certificates under Section 395</li>
+          <li>Senior citizen toggle for FD/Bank Interest sections with higher thresholds</li>
+          <li>ITR filing status toggle for Cash Withdrawal section with dual-slab calculation</li>
+          <li>Payee surcharge category  -  eight categories with marginal relief</li>
+          <li>Full result breakdown  -  gross, rate, TDS, surcharge, cess, net payable, effective rate</li>
+        </ul>
+      </div>
 
-  <div class="section">
-    <h3>Screenshots</h3>
-    <div class="screenshots">
-      <img src="../assets/tds-calc-s1.jpg" alt="Screenshot 1">
-      <img src="../assets/tds-calc-s2.jpg" alt="Screenshot 2">
-      <img src="../assets/tds-calc-s3.jpg" alt="Screenshot 3">
+      <div class="section">
+        <h3>Salary TDS Calculator</h3>
+        <ul>
+          <li>Old Regime vs New Regime side-by-side comparison</li>
+          <li>Standard deduction  -  Rs.75,000 (New) / Rs.50,000 (Old)</li>
+          <li>Age category  -  Below 60, Senior (60–80), Super Senior (80+) with different slabs</li>
+          <li>Old Regime deductions  -  Section 123 (80C), 124 (80CCD(1B)), 126 (80D), 129 (80E), 133 (80G), 153 (80TTA), 22 (24(b))</li>
+          <li>HRA exemption calculator  -  actual HRA, rent minus 10% basic, 50%/40% of basic</li>
+          <li>Rebate  -  New Regime: full rebate up to Rs.60,000 (income ≤ Rs.12L); Old Regime: up to Rs.12,500 (income ≤ Rs.5L)</li>
+          <li>Surcharge with marginal relief for residents and non-residents</li>
+          <li>DTAA disclaimer for non-resident employees</li>
+          <li>Tax rounding to nearest Rs.10 per Section 516</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Rate Chart & Search</h3>
+        <ul>
+          <li>Searchable reference chart of all 30+ TDS sections</li>
+          <li>Category filter chips  -  EPF, Commission, Rent, Property, Interest, Contractor, Professional, and more</li>
+          <li>Each card shows  -  section name, old/new numbers, rate with/without PAN, company/firm rate, threshold</li>
+          <li>Searchable section picker in calculator with instant filtering</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Result Display</h3>
+        <ul>
+          <li>Full breakdown  -  gross amount, section info, threshold, rate, TDS, surcharge, cess, net payable, effective rate</li>
+          <li>Contextual warnings for no-PAN penalty and non-resident DTAA</li>
+          <li>Indian Rupee formatting with comma separation</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="app-screenshots">
+      <h3>Screenshots</h3>
+      <div class="screenshots-wrap">
+        <div class="screenshots" id="screenshots">
+          <div class="screenshots-track" id="track">
+            <img src="../assets/tds-calc-s1.png" alt="Screenshot 1" onclick="openLightbox(this.src)">
+            <img src="../assets/tds-calc-s2.png" alt="Screenshot 2" onclick="openLightbox(this.src)">
+            <img src="../assets/tds-calc-s3.png" alt="Screenshot 3" onclick="openLightbox(this.src)">
+            <img src="../assets/tds-calc-s4.png" alt="Screenshot 4" onclick="openLightbox(this.src)">
+            <img src="../assets/tds-calc-s5.png" alt="Screenshot 5" onclick="openLightbox(this.src)">
+          </div>
+        </div>
+        <div class="screenshots-nav">
+          <button onclick="scrollShot(-1)">&#10094;</button>
+          <button onclick="scrollShot(1)">&#10095;</button>
+        </div>
+      </div>
     </div>
   </div>
+</div>
 
-  <div class="section">
-    <h3>Privacy</h3>
-    <p><a href="https://hpupadhyay.github.io/privacy-tds-calculator.html">Privacy Policy</a></p>
-  </div>
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+  <button class="lightbox-prev" onclick="event.stopPropagation();navLightbox(-1)">&#10094;</button>
+  <button class="lightbox-next" onclick="event.stopPropagation();navLightbox(1)">&#10095;</button>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="Full screen screenshot" onclick="event.stopPropagation()">
 </div>
 
 <footer class="footer">
@@ -79,7 +132,18 @@
     </div>
   </div>
 </footer>
-<script>window.addEventListener('scroll',function(){document.querySelector('.nav').classList.toggle('scrolled',window.scrollY>20)});</script>
-
+<script>
+var lbImages=[],lbIdx=0,realCount=0,currentIdx=0,wrapping=false;
+window.addEventListener('scroll',function(){document.querySelector('.nav').classList.toggle('scrolled',window.scrollY>20)});
+function collectImages(){lbImages=[];document.querySelectorAll('.screenshots-track img').forEach(function(img){if(!img.classList.contains('clone'))lbImages.push(img.src)})}
+function openLightbox(src){collectImages();lbIdx=lbImages.indexOf(src);document.getElementById('lightbox-img').src=src;document.getElementById('lightbox').classList.add('open');document.body.style.overflow='hidden'}
+function closeLightbox(){document.getElementById('lightbox').classList.remove('open');document.body.style.overflow=''}
+function navLightbox(dir){lbIdx=(lbIdx+dir+lbImages.length)%lbImages.length;document.getElementById('lightbox-img').src=lbImages[lbIdx]}
+document.addEventListener('keydown',function(e){if(!document.getElementById('lightbox').classList.contains('open'))return;if(e.key==='Escape')closeLightbox();if(e.key==='ArrowLeft')navLightbox(-1);if(e.key==='ArrowRight')navLightbox(1)});
+function goToSlide(idx,animate){var c=document.getElementById('track');if(!c)return;if(!animate)c.style.transition='none';c.style.transform='translateX(-'+(idx*100)+'%)';if(!animate)c.offsetHeight;if(!animate)c.style.transition='transform 0.4s ease-in-out'}
+function scrollShot(dir){if(wrapping)return;var c=document.getElementById('track'),n=realCount;currentIdx+=dir;goToSlide(currentIdx+1,true);if((dir>0&&currentIdx>=n)||(dir<0&&currentIdx<0)){wrapping=true;setTimeout(function(){currentIdx=dir>0?0:n-1;goToSlide(currentIdx+1,false);wrapping=false},420)}}
+document.addEventListener('DOMContentLoaded',function(){var c=document.getElementById('track'),imgs=c.querySelectorAll('img');realCount=imgs.length;var first=imgs[0].cloneNode(true);first.classList.add('clone');c.appendChild(first);var last=imgs[imgs.length-1].cloneNode(true);last.classList.add('clone');c.insertBefore(last,imgs[0]);currentIdx=0;goToSlide(1,false)});
+document.addEventListener('DOMContentLoaded',function(){total=document.getElementById('screenshots').querySelectorAll('img').length});
+</script>
 </body>
 </html>

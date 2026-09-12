@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Restaurant Management — Hari Prasad Upadhyay</title>
+<title>Restaurant Management - Hari Prasad Upadhyay</title>
 <link rel="stylesheet" href="../css/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
       <a href="../index.html">Home</a>
       <a href="public.html">Apps</a>
       <a href="testing.html">Testing</a>
-      <a href="development.html">In Progress</a>
+      <a href="development.html" class="active">In Progress</a>
       <a href="https://groups.google.com/g/build--test-app-club" target="_blank" class="nav-cta">Join Tester's Group</a>
     </div>
     <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
@@ -25,38 +25,64 @@
 </nav>
 
 <div class="container app-page">
-  <a class="back" href="development.html">&larr; Under Development</a>
+  <a class="back" href="development.html">&larr; In Progress</a>
 
-  <div class="app-header">
-    <img class="icon" src="../assets/expense-tracker.png" alt="Restaurant Management icon">
-    <div>
-      <h2>Restaurant Management System</h2>
-      <p>Complete Restaurant Operations</p>
-      <span class="category-badge badge-dev" style="margin-top:12px;">Under Development</span>
+  <div class="app-hero">
+    <img class="icon" src="../assets/restaurant-management.png" alt="Restaurant Management icon">
+    <div class="app-hero-info">
+      <h2>Restaurant Management</h2>
+      <p class="tagline">Local-first POS for small restaurants and cafes</p>
+      <span class="status-badge status-planning">Planned</span>
     </div>
   </div>
 
-  <div class="section">
-    <h3>About</h3>
-    <p>A complete restaurant management system with a local server engine, real-time sync, and separate modules for waiters, kitchen, and cashier. Designed to work offline-first with local network connectivity.</p>
-  </div>
+  <div class="app-body">
+    <div class="app-content">
+      <div class="section">
+        <h3>About</h3>
+        <p>A local-first point-of-sale system for small eateries. Your phone acts as the server - handle orders, track tables, generate bills, and view daily sales summaries. Works over Wi-Fi without internet. Designed for quick-service restaurants and small cafes.</p>
+      </div>
 
-  <div class="section">
-    <h3>Planned Features</h3>
-    <ul>
-      <li><strong>Order Management</strong> — Waiter app for taking orders at tables</li>
-      <li><strong>Kitchen Display (KDS)</strong> — Real-time order queue for kitchen staff</li>
-      <li><strong>Billing &amp; POS</strong> — Cashier module with payment processing</li>
-      <li><strong>Local Server</strong> — Runs on local network, no internet required</li>
-      <li><strong>mDNS Auto-Discovery</strong> — Devices auto-connect on the same network</li>
-      <li><strong>Real-Time Sync</strong> — WebSocket pipeline for instant updates</li>
-      <li><strong>Multi-Device</strong> — Multiple tablets/phones work together seamlessly</li>
-    </ul>
-  </div>
+      <div class="section">
+        <h3>Menu & Orders</h3>
+        <ul>
+          <li>Digital menu with categories and modifiers</li>
+          <li>Order management - dine-in, takeaway, delivery</li>
+          <li>Quick item search and favourites</li>
+          <li>Special instructions and customizations per item</li>
+        </ul>
+      </div>
 
-  <div class="section">
-    <h3>Development Status</h3>
-    <p>Architecture designed and planning phase. No code yet — building the foundation first.</p>
+      <div class="section">
+        <h3>Table Management</h3>
+        <ul>
+          <li>Table layout with status tracking - available, occupied, reserved</li>
+          <li>Waiter ordering from table-side</li>
+          <li>Kitchen display for order preparation</li>
+          <li>Table transfer and merge support</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Billing & Payments</h3>
+        <ul>
+          <li>Bill generation with multiple payment modes</li>
+          <li>Split bill support</li>
+          <li>Discount and tax configuration</li>
+          <li>Quick checkout with printed receipts</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Reports & Inventory</h3>
+        <ul>
+          <li>Daily, weekly, and monthly sales reports</li>
+          <li>Item-wise sales analysis</li>
+          <li>Inventory tracking for key ingredients</li>
+          <li>Low stock alerts</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -70,7 +96,8 @@
     </div>
   </div>
 </footer>
-<script>window.addEventListener('scroll',function(){document.querySelector('.nav').classList.toggle('scrolled',window.scrollY>20)});</script>
-
+<script>
+window.addEventListener('scroll',function(){document.querySelector('.nav').classList.toggle('scrolled',window.scrollY>20)});
+</script>
 </body>
 </html>

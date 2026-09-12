@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Expense Tracker — Hari Prasad Upadhyay</title>
+<title>Expense Tracker  -  Hari Prasad Upadhyay</title>
 <link rel="stylesheet" href="../css/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -25,60 +25,138 @@
 </nav>
 
 <div class="container app-page">
-  <a class="back" href="../index.html">&larr; All Apps</a>
+  <a class="back" href="testing.html">&larr; Early Access</a>
 
-  <div class="app-header">
+  <div class="app-hero">
     <img class="icon" src="../assets/expense-tracker.png" alt="Expense Tracker icon">
-    <div>
+    <div class="app-hero-info">
       <h2>Expense Tracker</h2>
-      <p>Smart Personal Finance Manager</p>
-      <a class="btn btn-early" href="https://play.google.com/store/apps/details?id=com.moneytracker.exp" target="_blank">Early Access — Testing</a>
-      <a class="btn" href="https://groups.google.com/g/build--test-app-club" target="_blank">Join Tester's Group</a>
+      <p class="tagline">Smart Personal Finance Manager</p>
+      <a class="btn btn-early" href="https://play.google.com/store/apps/details?id=com.moneytracker.exp" target="_blank">Early Access  -  Testing</a>
     </div>
   </div>
 
-  <div class="section">
-    <h3>About</h3>
-    <p>Expense Tracker is a 100% offline personal finance manager that helps you track expenses, manage accounts, and take control of your money. All data stays on your device — no accounts, no cloud, no sign-in required.</p>
-  </div>
+  <div class="app-body">
+    <div class="app-content">
+      <div class="section">
+        <h3>About</h3>
+        <p>Full-featured offline personal finance manager  -  double-entry accounting system that tracks income, expenses, credit cards, loans, investments, budgets, and net worth. All data stays on your device. No accounts, no cloud, no sign-in required.</p>
+      </div>
 
-  <div class="section">
-    <h3>Features</h3>
-    <ul>
-      <li><strong>Account Management</strong> — Bank, Cash, Wallet, Credit Card, Investment &amp; Liability tracking</li>
-      <li><strong>Transaction Tracking</strong> — Expenses, Income &amp; Transfers with multi-line support</li>
-      <li><strong>Credit Card Management</strong> — Statement cycles, due dates, payment tracking &amp; category breakdown</li>
-      <li><strong>Loans &amp; EMIs</strong> — Loan taken &amp; given tracking with EMI scheduling</li>
-      <li><strong>Forecasting</strong> — Monthly cash flow forecast with opening balance, expenses, EMIs &amp; investments</li>
-      <li><strong>Balance Sheet</strong> — Assets, Liabilities &amp; Equity with opening balance support</li>
-      <li><strong>Reports &amp; Charts</strong> — Daily/Weekly/Monthly expense charts, merchant reports &amp; CC statements</li>
-      <li><strong>Data Export</strong> — Multi-sheet CSV export (Expenses, Income, Transfers, EMIs, Given Loans)</li>
-      <li><strong>Backup &amp; Restore</strong> — Local backup that survives uninstall + optional Google Drive backup</li>
-      <li><strong>Budget Management</strong> — Set monthly budgets with progress alerts</li>
-      <li><strong>Recurring Transactions</strong> — Daily, weekly, monthly, or yearly recurring entries</li>
-      <li><strong>Dark &amp; Light Theme</strong> — Multiple currency support</li>
-      <li><strong>100% Offline</strong> — All data stored locally via SharedPreferences</li>
-    </ul>
-  </div>
+      <div class="section">
+        <h3>Account Management</h3>
+        <ul>
+          <li>Seven account types  -  Bank, Cash, Wallet, Credit Card, Investment, Liability, Other</li>
+          <li>Full chart of accounts with balance tracking, icons, and colours</li>
+          <li>Account ledger with transaction history per account</li>
+          <li>Active/inactive toggle and custom sort order</li>
+        </ul>
+      </div>
 
-  <div class="section">
-    <h3>Backup &amp; Restore</h3>
-    <p>Backups are saved to your device's shared storage so they survive app uninstall and reinstall. You can also optionally back up to your personal Google Drive. On reinstall, the app detects existing backups and offers to restore them.</p>
-  </div>
+      <div class="section">
+        <h3>Transactions</h3>
+        <ul>
+          <li>Three types  -  Expense, Income, and Transfer</li>
+          <li>Multi-line transactions  -  split across multiple categories and accounts in one entry</li>
+          <li>Merchant tracking with autocomplete from previous entries</li>
+          <li>Payment method, notes, and full-text search</li>
+          <li>Haptic feedback on key actions</li>
+        </ul>
+      </div>
 
-  <div class="section">
-    <h3>Screenshots</h3>
-    <div class="screenshots">
-      <img src="../assets/expense-tracker-s1.jpg" alt="Screenshot 1">
-      <img src="../assets/expense-tracker-s2.jpg" alt="Screenshot 2">
-      <img src="../assets/expense-tracker-s3.jpg" alt="Screenshot 3">
+      <div class="section">
+        <h3>Credit Card Management</h3>
+        <ul>
+          <li>Credit limit, billing day, due day, statement day, minimum payment percentage</li>
+          <li>Available credit and utilization percentage tracking</li>
+          <li>Monthly CC statement  -  billing cycle visualization, opening balance, category breakdown</li>
+          <li>Minimum vs full payment comparison with balance after payment</li>
+          <li>Due date warnings on home screen for upcoming CC dues</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Loan Tracking</h3>
+        <ul>
+          <li>Borrowed and Given loans  -  auto-creates linked Liability/Asset accounts</li>
+          <li>Six loan types  -  Personal, Home, Bike, Car, Education, Other</li>
+          <li>Four interest types  -  Reducing balance, Simple interest, No interest, Pay at end</li>
+          <li>EMI schedule with principal/interest breakdown, custom payments, and foreclosure</li>
+          <li>CSV import for EMI schedules from spreadsheets</li>
+          <li>Progress tracking with visual progress bars</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Financial Reports</h3>
+        <ul>
+          <li>Income Statement  -  income vs expenses with category breakdown</li>
+          <li>Balance Sheet  -  assets, liabilities, equity with retained earnings</li>
+          <li>Cash Flow Statement  -  operating, investing, financing activities</li>
+          <li>Cash Flow Forecast  -  3/6/12 month projections using historical averages</li>
+          <li>CC Statement Report and Merchant Report</li>
+          <li>Charts  -  monthly cash flow bars, expense breakdown donut, net worth trend</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Budget & Recurring</h3>
+        <ul>
+          <li>Monthly spending limits per category with progress bars and over-budget warnings</li>
+          <li>Recurring transactions auto-generate on schedule and feed into forecasts</li>
+          <li>Fixed expenses tracked separately with forecast integration</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Export & Backup</h3>
+        <ul>
+          <li>Multi-sheet CSV export  -  Expenses, Income, Transfers, EMI Payments, Given Loans</li>
+          <li>Monthly or all-time export with share integration</li>
+          <li>Local backup  -  survives uninstall via Android media directory</li>
+          <li>Google Drive backup with auto-backup (hourly/daily/weekly/monthly)</li>
+          <li>Onboarding restore  -  fresh install scans for existing backups</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Settings & Customization</h3>
+        <ul>
+          <li>Eight currencies  -  INR, USD, EUR, GBP, JPY, KRW, VND, THB</li>
+          <li>Configurable decimal places synced with currency</li>
+          <li>Light, Dark, and System Default themes with Material 3</li>
+          <li>Books Beginning Date  -  set a financial epoch for all reports</li>
+          <li>Full category management  -  edit, delete, group, and reorder</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="app-screenshots">
+      <h3>Screenshots</h3>
+      <div class="screenshots-wrap">
+        <div class="screenshots" id="screenshots">
+          <div class="screenshots-track" id="track">
+            <img src="../assets/expense-tracker-s1.jpg" alt="Screenshot 1" onclick="openLightbox(this.src)">
+            <img src="../assets/expense-tracker-s2.jpg" alt="Screenshot 2" onclick="openLightbox(this.src)">
+            <img src="../assets/expense-tracker-s3.jpg" alt="Screenshot 3" onclick="openLightbox(this.src)">
+            <img src="../assets/expense-tracker-s4.jpg" alt="Screenshot 4" onclick="openLightbox(this.src)">
+            <img src="../assets/expense-tracker-s5.jpg" alt="Screenshot 5" onclick="openLightbox(this.src)">
+          </div>
+        </div>
+        <div class="screenshots-nav">
+          <button onclick="scrollShot(-1)">&#10094;</button>
+          <button onclick="scrollShot(1)">&#10095;</button>
+        </div>
+      </div>
     </div>
   </div>
+</div>
 
-  <div class="section">
-    <h3>Privacy</h3>
-    <p><a href="../privacy-expense-tracker.html">Privacy Policy</a></p>
-  </div>
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+  <button class="lightbox-prev" onclick="event.stopPropagation();navLightbox(-1)">&#10094;</button>
+  <button class="lightbox-next" onclick="event.stopPropagation();navLightbox(1)">&#10095;</button>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="Full screen screenshot" onclick="event.stopPropagation()">
 </div>
 
 <footer class="footer">
@@ -91,7 +169,18 @@
     </div>
   </div>
 </footer>
-<script>window.addEventListener('scroll',function(){document.querySelector('.nav').classList.toggle('scrolled',window.scrollY>20)});</script>
-
+<script>
+var lbImages=[],lbIdx=0,realCount=0,currentIdx=0,wrapping=false;
+window.addEventListener('scroll',function(){document.querySelector('.nav').classList.toggle('scrolled',window.scrollY>20)});
+function collectImages(){lbImages=[];document.querySelectorAll('.screenshots-track img').forEach(function(img){if(!img.classList.contains('clone'))lbImages.push(img.src)})}
+function openLightbox(src){collectImages();lbIdx=lbImages.indexOf(src);document.getElementById('lightbox-img').src=src;document.getElementById('lightbox').classList.add('open');document.body.style.overflow='hidden'}
+function closeLightbox(){document.getElementById('lightbox').classList.remove('open');document.body.style.overflow=''}
+function navLightbox(dir){lbIdx=(lbIdx+dir+lbImages.length)%lbImages.length;document.getElementById('lightbox-img').src=lbImages[lbIdx]}
+document.addEventListener('keydown',function(e){if(!document.getElementById('lightbox').classList.contains('open'))return;if(e.key==='Escape')closeLightbox();if(e.key==='ArrowLeft')navLightbox(-1);if(e.key==='ArrowRight')navLightbox(1)});
+function goToSlide(idx,animate){var c=document.getElementById('track');if(!c)return;if(!animate)c.style.transition='none';c.style.transform='translateX(-'+(idx*100)+'%)';if(!animate)c.offsetHeight;if(!animate)c.style.transition='transform 0.4s ease-in-out'}
+function scrollShot(dir){if(wrapping)return;var c=document.getElementById('track'),n=realCount;currentIdx+=dir;goToSlide(currentIdx+1,true);if((dir>0&&currentIdx>=n)||(dir<0&&currentIdx<0)){wrapping=true;setTimeout(function(){currentIdx=dir>0?0:n-1;goToSlide(currentIdx+1,false);wrapping=false},420)}}
+document.addEventListener('DOMContentLoaded',function(){var c=document.getElementById('track'),imgs=c.querySelectorAll('img');realCount=imgs.length;var first=imgs[0].cloneNode(true);first.classList.add('clone');c.appendChild(first);var last=imgs[imgs.length-1].cloneNode(true);last.classList.add('clone');c.insertBefore(last,imgs[0]);currentIdx=0;goToSlide(1,false)});
+document.addEventListener('DOMContentLoaded',function(){total=document.getElementById('screenshots').querySelectorAll('img').length});
+</script>
 </body>
 </html>
