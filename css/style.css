@@ -352,11 +352,19 @@ img { max-width: 100%; height: auto; display: block; }
 .app-body { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
 
 .app-content { min-width: 0; }
-.section { margin-bottom: 28px; }
-.section h3 { font-size: 1.1em; font-weight: 700; margin-bottom: 14px; color: #1a1a2e; }
-.section p { color: #555; line-height: 1.7; font-size: 0.93em; margin-bottom: 8px; }
-.section ul { padding-left: 0; list-style: none; margin-top: 4px; }
-.section li { padding: 8px 0; border-bottom: 1px solid #f5f5f5; color: #444; font-size: 0.9em; line-height: 1.5; }
+.section { margin-bottom: 36px; padding-bottom: 4px; }
+.app-content .section h3 {
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #1a1a2e;
+  display: block;
+  margin: 0 0 24px 0 !important;
+  padding: 0 0 24px 0 !important;
+  border-bottom: 1px solid #eee;
+}
+.section p { color: #555; line-height: 1.5; font-size: 0.93em; margin-bottom: 8px; }
+.section ul { padding-left: 0; list-style: none; margin-top: 0; }
+.section li { padding: 7px 0; border-bottom: 1px solid #f5f5f5; color: #444; font-size: 0.9em; line-height: 1.4; }
 .section li:last-child { border-bottom: none; }
 .section li strong { color: #1a1a2e; }
 
@@ -446,7 +454,7 @@ img { max-width: 100%; height: auto; display: block; }
    RESPONSIVE — Mobile (max-width: 640px)
    ========================================== */
 @media (max-width: 640px) {
-  .container { padding: 0 24px; }
+  .container { padding: 0 20px; }
   .nav .container { height: 48px; }
   .nav-links {
     display: none; position: absolute; top: 48px; left: 0; right: 0;
@@ -465,7 +473,7 @@ img { max-width: 100%; height: auto; display: block; }
   .stat-item { padding: 20px 12px; }
   .stat-number { font-size: 1.6em; }
   .stat-label { font-size: 0.72em; }
-  .why, .categories, .faq, .how, .previews, .techstack { padding: 40px 0; }
+  .why, .categories, .faq, .how, .previews, .techstack, .newsletter { padding: 40px 0; }
   .why-card, .how-step, .tech-item { text-align: center; }
   .how-steps { grid-template-columns: 1fr; gap: 12px; max-width: 400px; margin: 0 auto; }
   .preview-scroll { gap: 14px; }
@@ -481,16 +489,18 @@ img { max-width: 100%; height: auto; display: block; }
   .page-header h2 { font-size: 1.4em; }
   .app-page { padding: 60px 0 32px; }
   .app-hero { flex-direction: column; text-align: center; gap: 16px; }
-  .app-hero .icon { width: 72px; height: 72px; }
-  .app-hero-info h2 { font-size: 1.4em; }
+  .app-hero .icon { width: 64px; height: 64px; border-radius: 16px; }
+  .app-hero-info h2 { font-size: 1.3em; }
   .app-hero-info .btn { display: flex; justify-content: center; }
-  .app-body { grid-template-columns: 1fr; gap: 28px; }
+  .app-body { grid-template-columns: 1fr; gap: 24px; }
   .app-screenshots { position: static; }
-  .screenshots-wrap { width: 70%; }
-  .screenshots img { max-height: 500px; }
+  .screenshots-wrap { width: 100%; }
+  .screenshots-track img { max-height: 400px; }
   .screenshots-nav button { width: 32px; height: 32px; font-size: 0.9em; }
-  .section { text-align: left; }
-  .section li { padding-left: 4px; }
+  .section { text-align: left; margin-bottom: 32px; }
+  .app-content .section h3 { font-size: 1.05em; margin: 0 0 20px 0 !important; padding: 0 0 16px 0 !important; border-bottom: 1px solid #eee; }
+  .section p { font-size: 0.88em; line-height: 1.5; }
+  .section li { padding: 8px 0; font-size: 0.85em; }
   .faq-q { font-size: 0.9em; padding: 14px 16px; }
   .faq-a p { padding: 0 16px 14px; font-size: 0.85em; }
   .cta-section { padding: 36px 16px; }
