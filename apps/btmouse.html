@@ -14,10 +14,9 @@
   <div class="container">
     <a href="../index.html" class="nav-brand">Hari Prasad Upadhyay</a>
     <div class="nav-links">
-      <a href="../index.html">Home</a>
       <a href="public.html">Apps</a>
-      <a href="testing.html">Testing</a>
-      <a href="development.html" class="active">In Progress</a>
+      <a href="testing.html" class="active">Testing</a>
+      <a href="development.html">In Progress</a>
       <a href="https://groups.google.com/g/build--test-app-club" target="_blank" class="nav-cta">Join Tester's Group</a>
     </div>
     <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
@@ -25,14 +24,14 @@
 </nav>
 
 <div class="container app-page">
-  <a class="back" href="development.html">&larr; In Progress</a>
+  <a class="back" href="testing.html">&larr; Early Access</a>
 
   <div class="app-hero">
     <img class="icon" src="../assets/btmouse.png" alt="BTMouse icon">
     <div class="app-hero-info">
       <h2>BTMouse</h2>
-      <p class="tagline">Turn your phone into a Bluetooth mouse and keyboard</p>
-      <span class="status-badge status-development">Built - Pre-Release</span>
+      <p class="tagline">Turn your phone into a Bluetooth mouse, keyboard &amp; remote for your PC</p>
+      <a class="btn btn-early" href="https://play.google.com/store/apps/details?id=com.btmouse" target="_blank">Early Access  -  Testing</a>
     </div>
   </div>
 
@@ -40,27 +39,55 @@
     <div class="app-content">
       <div class="section">
         <h3>About</h3>
-        <p>BTMouse turns your Android phone into a Bluetooth mouse, keyboard, and presenter remote for your PC. Useful when your mouse dies or you need a quick pointing device. Works over standard Bluetooth HID protocol - no PC software needed.</p>
+        <p>BTMouse turns your Android phone into a powerful wireless Bluetooth mouse, keyboard, and remote control for your PC. 100% serverless - works directly over Bluetooth with no internet, no accounts, and no ads. No PC software or drivers required.</p>
       </div>
 
       <div class="section">
-        <h3>Mouse Mode</h3>
+        <h3>Mouse &amp; Trackpad</h3>
         <ul>
-          <li>Touchpad-style mouse control</li>
-          <li>Left and right click buttons</li>
-          <li>Scroll gesture support</li>
-          <li>Adjustable sensitivity settings</li>
-          <li>Multi-touch gesture support</li>
+          <li>Precision trackpad with left and right click</li>
+          <li>Adjustable pointer and scroll speed</li>
+          <li>Air Mouse - tilt your phone to control cursor via accelerometer</li>
+          <li>Swap buttons for left-handed use</li>
+          <li>Dedicated horizontal scroll zone</li>
         </ul>
       </div>
 
       <div class="section">
-        <h3>Keyboard Mode</h3>
+        <h3>Full Keyboard</h3>
         <ul>
-          <li>Full keyboard input over Bluetooth</li>
-          <li>Function keys and special characters</li>
-          <li>Media controls - play, pause, volume</li>
-          <li>Custom keyboard shortcuts</li>
+          <li>Complete PC keyboard with F1-F12, navigation cluster, modifiers</li>
+          <li>Windows and Mac layout toggle (Ctrl/Win/Alt vs Ctrl/Cmd/Opt)</li>
+          <li>Long-press key repeat with adjustable delay and rate</li>
+          <li>Voice-to-text input - speak and type to your PC</li>
+          <li>Paste to PC - reads phone clipboard and types it automatically</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Indian Language Keyboard</h3>
+        <ul>
+          <li>10 languages: English, Hindi, Tamil, Telugu, Bengali, Marathi, Gujarati, Kannada, Malayalam, Punjabi</li>
+          <li>Phonetic typing - type how you pronounce</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Number Pad</h3>
+        <ul>
+          <li>Dedicated number pad layout with Num Lock toggle</li>
+          <li>Arithmetic operators and Enter</li>
+          <li>Perfect for data entry and spreadsheets</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Programmable Shortcuts</h3>
+        <ul>
+          <li>Grid of customizable shortcut buttons</li>
+          <li>12 pre-loaded shortcuts (Ctrl+C, Ctrl+V, Alt+Tab, Alt+F4, Ctrl+Alt+Del, etc.)</li>
+          <li>Create your own with custom labels and any key combination</li>
+          <li>Long-press to edit, delete with confirmation</li>
         </ul>
       </div>
 
@@ -68,23 +95,96 @@
         <h3>Presenter Mode</h3>
         <ul>
           <li>Slide navigation - next, previous</li>
-          <li>Laser pointer simulation on screen</li>
-          <li>Slide progress indicator</li>
-          <li>Timer display for presentation management</li>
+          <li>Start slideshow (F5), end show (Esc), blank screen (B)</li>
+          <li>Annotation tools - pointer (Ctrl+P) and eraser (Ctrl+E)</li>
         </ul>
       </div>
 
       <div class="section">
-        <h3>Connection</h3>
+        <h3>Multimedia Controls</h3>
         <ul>
-          <li>One-tap connect to paired devices</li>
-          <li>Auto-reconnect on startup</li>
-          <li>Works with any Bluetooth-enabled PC</li>
-          <li>No PC software or drivers required</li>
+          <li>Play, pause, previous/next track, stop</li>
+          <li>Volume up/down and mute</li>
+          <li>Fullscreen toggle (F11)</li>
+          <li>Large one-handed buttons</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Lock/Unlock PC</h3>
+        <ul>
+          <li>Remotely lock Windows (Win+L), Mac (Ctrl+Cmd+Q), or Linux (Ctrl+Alt+L)</li>
+          <li>Unlock with biometric fingerprint verification</li>
+          <li>Encrypted password storage (AES-256-GCM) - never leaves your device</li>
+          <li>Ctrl+Alt+Del support for Windows secure attention</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Clipboard Sync</h3>
+        <ul>
+          <li>Phone to PC - paste text and it types automatically with progress bar</li>
+          <li>PC to phone - embedded web server with PIN authentication</li>
+          <li>6-digit session PIN with rate limiting and 10-minute timeout</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Mouse Jiggler</h3>
+        <ul>
+          <li>Keep-Alive foreground service prevents PC from sleeping</li>
+          <li>Subtle 2-pixel movements every 15 seconds with net-zero displacement</li>
+          <li>Perfect for long downloads, RDP/VNC, and keeping status active</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Customizable Settings</h3>
+        <ul>
+          <li>Pointer speed (0.3x to 3x) and scroll speed (0.3x to 3x)</li>
+          <li>Air Mouse sensitivity (1x to 10x) with dead zone filtering</li>
+          <li>Key repeat delay (100-1000ms) and repeat rate (20-200ms)</li>
+          <li>Haptic vibration feedback toggle</li>
+          <li>Keep screen on, auto-connect on startup</li>
+          <li>3 themes: Light, Dark, System</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Requirements</h3>
+        <ul>
+          <li>Android 9.0 (API 28) or higher</li>
+          <li>PC with Bluetooth support</li>
+          <li>Works with Windows, macOS, and Linux</li>
         </ul>
       </div>
     </div>
+
+    <div class="app-screenshots">
+      <h3>Screenshots</h3>
+      <div class="screenshots-wrap">
+        <div class="screenshots" id="screenshots">
+          <div class="screenshots-track" id="track">
+            <img src="../assets/btmouse-s1.jpg" alt="Screenshot 1" onclick="openLightbox(this.src)">
+            <img src="../assets/btmouse-s2.jpg" alt="Screenshot 2" onclick="openLightbox(this.src)">
+            <img src="../assets/btmouse-s3.jpg" alt="Screenshot 3" onclick="openLightbox(this.src)">
+            <img src="../assets/btmouse-s4.jpg" alt="Screenshot 4" onclick="openLightbox(this.src)">
+          </div>
+        </div>
+        <div class="screenshots-nav">
+          <button onclick="scrollShot(-1)">&#10094;</button>
+          <button onclick="scrollShot(1)">&#10095;</button>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+  <button class="lightbox-prev" onclick="event.stopPropagation();navLightbox(-1)">&#10094;</button>
+  <button class="lightbox-next" onclick="event.stopPropagation();navLightbox(1)">&#10095;</button>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="Full screen screenshot" onclick="event.stopPropagation()">
 </div>
 
 <footer class="footer">
@@ -95,7 +195,17 @@
   </div>
 </footer>
 <script>
+var lbImages=[],lbIdx=0,realCount=0,currentIdx=0,wrapping=false;
 window.addEventListener('scroll',function(){document.querySelector('.nav').classList.toggle('scrolled',window.scrollY>20)});
+function collectImages(){lbImages=[];document.querySelectorAll('.screenshots-track img').forEach(function(img){if(!img.classList.contains('clone'))lbImages.push(img.src)})}
+function openLightbox(src){collectImages();lbIdx=lbImages.indexOf(src);document.getElementById('lightbox-img').src=src;document.getElementById('lightbox').classList.add('open');document.body.style.overflow='hidden'}
+function closeLightbox(){document.getElementById('lightbox').classList.remove('open');document.body.style.overflow=''}
+function navLightbox(dir){lbIdx=(lbIdx+dir+lbImages.length)%lbImages.length;document.getElementById('lightbox-img').src=lbImages[lbIdx]}
+document.addEventListener('keydown',function(e){if(!document.getElementById('lightbox').classList.contains('open'))return;if(e.key==='Escape')closeLightbox();if(e.key==='ArrowLeft')navLightbox(-1);if(e.key==='ArrowRight')navLightbox(1)});
+function goToSlide(idx,animate){var c=document.getElementById('track');if(!c)return;if(!animate)c.style.transition='none';c.style.transform='translateX(-'+(idx*100)+'%)';if(!animate)c.offsetHeight;if(!animate)c.style.transition='transform 0.4s ease-in-out'}
+function scrollShot(dir){if(wrapping)return;var c=document.getElementById('track'),n=realCount;currentIdx+=dir;goToSlide(currentIdx+1,true);if((dir>0&&currentIdx>=n)||(dir<0&&currentIdx<0)){wrapping=true;setTimeout(function(){currentIdx=dir>0?0:n-1;goToSlide(currentIdx+1,false);wrapping=false},420)}}
+document.addEventListener('DOMContentLoaded',function(){var c=document.getElementById('track'),imgs=c.querySelectorAll('img');realCount=imgs.length;var first=imgs[0].cloneNode(true);first.classList.add('clone');c.appendChild(first);var last=imgs[imgs.length-1].cloneNode(true);last.classList.add('clone');c.insertBefore(last,imgs[0]);currentIdx=0;goToSlide(1,false)});
+document.addEventListener('DOMContentLoaded',function(){total=document.getElementById('screenshots').querySelectorAll('img').length});
 </script>
 </body>
 </html>
