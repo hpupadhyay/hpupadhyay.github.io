@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Fasting & Water Tracker — Hari Prasad Upadhyay</title>
+<title>Fasting & Water Tracker - Hari Prasad Upadhyay</title>
 <link rel="stylesheet" href="../css/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -12,11 +12,11 @@
 
 <nav class="nav">
   <div class="container">
-    <a href="../index.html" class="nav-brand"><span class="dot"></span>Hari Prasad Upadhyay</a>
+    <a href="../index.html" class="nav-brand">Hari Prasad Upadhyay</a>
     <div class="nav-links">
       <a href="../index.html">Home</a>
       <a href="public.html">Apps</a>
-      <a href="testing.html">Testing</a>
+      <a href="testing.html" class="active">Testing</a>
       <a href="development.html">In Progress</a>
       <a href="https://groups.google.com/g/build--test-app-club" target="_blank" class="nav-cta">Join Tester's Group</a>
     </div>
@@ -25,50 +25,144 @@
 </nav>
 
 <div class="container app-page">
-  <a class="back" href="development.html">&larr; Under Development</a>
+  <a class="back" href="testing.html">&larr; Early Access</a>
 
-  <div class="app-header">
-    <img class="icon" src="../assets/expense-tracker.png" alt="Fasting & Water Tracker icon">
-    <div>
-      <h2>Fasting &amp; Water Tracker</h2>
-      <p>Healthy Fasting &amp; Hydration Habits</p>
-      <span class="category-badge badge-dev" style="margin-top:12px;">Under Development</span>
+  <div class="app-hero">
+    <img class="icon" src="../assets/fasting-tracker.png" alt="Fasting & Water Tracker icon">
+    <div class="app-hero-info">
+      <h2>Fasting & Water Tracker</h2>
+      <p class="tagline">Intermittent fasting timer with hydration tracking</p>
+      <a class="btn btn-early" href="https://play.google.com/store/apps/details?id=com.lowmaintenance.fasting_water_tracker" target="_blank">Early Access  -  Testing</a>
     </div>
   </div>
 
-  <div class="section">
-    <h3>About</h3>
-    <p>Fasting &amp; Water Tracker is an offline-first app that helps you build healthy intermittent fasting habits and track your daily water intake. Simple timers, progress charts, and reminders — all stored locally on your device.</p>
-  </div>
+  <div class="app-body">
+    <div class="app-content">
+      <div class="section">
+        <h3>About</h3>
+        <p>Fasting & Water Tracker turns your Android phone into a personal intermittent fasting and hydration companion. 100% offline - tracks fasting windows, water intake, and weight trends with live countdowns and metabolic stage timelines. No accounts, no cloud, no ads.</p>
+      </div>
 
-  <div class="section">
-    <h3>Planned Features</h3>
-    <ul>
-      <li><strong>Intermittent Fasting Timer</strong> — 16:8, 18:6, 20:4, custom fasting windows</li>
-      <li><strong>Water Intake Tracker</strong> — Log glasses, set daily goals, reminders</li>
-      <li><strong>Progress Charts</strong> — Visualize your fasting and hydration streaks</li>
-      <li><strong>Notifications</strong> — Fasting start/end alerts, water reminders</li>
-      <li><strong>100% Offline</strong> — All data stored on your device</li>
-    </ul>
-  </div>
+      <div class="section">
+        <h3>Fasting Timer</h3>
+        <ul>
+          <li>Start, pause, and end fasts with one tap</li>
+          <li>Live countdown showing hours and minutes remaining</li>
+          <li>Metabolic stage timeline - Fed, Sugar burn, Fat burn, Ketosis, Deep ketosis, Autophagy</li>
+          <li>Persists across app restarts using timestamps, not ticking timers</li>
+        </ul>
+      </div>
 
-  <div class="section">
-    <h3>Development Status</h3>
-    <p>Currently in early development. Join the tester's group to be notified when it's ready for testing.</p>
+      <div class="section">
+        <h3>Fasting Plans</h3>
+        <ul>
+          <li>Presets: 16:8, 18:6, 20:4, and custom durations</li>
+          <li>One-tap "start now" for any plan</li>
+          <li>Custom hours for personalized fasting windows</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Water Tracking</h3>
+        <ul>
+          <li>Quick-tap +250ml, +500ml, or custom amounts</li>
+          <li>Daily hydration target with progress ring</li>
+          <li>7-day history with daily breakdown</li>
+          <li>Undo last entry with confirmation</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Hydration Reminders</h3>
+        <ul>
+          <li>Timed local notifications within your drink window</li>
+          <li>Configurable first drink and last drink times</li>
+          <li>Adjustable reminder interval between drinks</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Fast-End Reminders</h3>
+        <ul>
+          <li>Local notification when your chosen fast duration completes</li>
+          <li>Milestone alerts for ketosis and autophagy stages</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Weight Tracking</h3>
+        <ul>
+          <li>Add weight entries in kg or lb</li>
+          <li>Line chart showing weekly and monthly trends</li>
+          <li>Track progress alongside your fasting journey</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Settings</h3>
+        <ul>
+          <li>Customize water target (ml or oz)</li>
+          <li>Set default fasting plan</li>
+          <li>Configure reminder times and notification preferences</li>
+          <li>Toggle between metric and imperial units</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Requirements</h3>
+        <ul>
+          <li>Android 7.0 (API 24) or higher</li>
+          <li>Notifications permission for reminders</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="app-screenshots">
+      <h3>Screenshots</h3>
+      <div class="screenshots-wrap">
+        <div class="screenshots" id="screenshots">
+          <div class="screenshots-track" id="track">
+            <img src="../assets/fasting-s1.png" alt="Screenshot 1" onclick="openLightbox(this.src)">
+            <img src="../assets/fasting-s2.png" alt="Screenshot 2" onclick="openLightbox(this.src)">
+            <img src="../assets/fasting-s3.png" alt="Screenshot 3" onclick="openLightbox(this.src)">
+            <img src="../assets/fasting-s4.png" alt="Screenshot 4" onclick="openLightbox(this.src)">
+          </div>
+        </div>
+        <div class="screenshots-nav">
+          <button onclick="scrollShot(-1)">&#10094;</button>
+          <button onclick="scrollShot(1)">&#10095;</button>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+  <button class="lightbox-prev" onclick="event.stopPropagation();navLightbox(-1)">&#10094;</button>
+  <button class="lightbox-next" onclick="event.stopPropagation();navLightbox(1)">&#10095;</button>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="Full screen screenshot" onclick="event.stopPropagation()">
 </div>
 
 <footer class="footer">
   <div class="container">
     <div class="footer-bottom">
       <p>&copy; 2026 Hari Prasad Upadhyay</p>
-      <div class="footer-social">
-        <a href="https://github.com/hpupadhyay" target="_blank">GH</a>
-      </div>
     </div>
   </div>
 </footer>
-<script>window.addEventListener('scroll',function(){document.querySelector('.nav').classList.toggle('scrolled',window.scrollY>20)});</script>
-
+<script>
+var lbImages=[],lbIdx=0,realCount=0,currentIdx=0,wrapping=false;
+window.addEventListener('scroll',function(){document.querySelector('.nav').classList.toggle('scrolled',window.scrollY>20)});
+function collectImages(){lbImages=[];document.querySelectorAll('.screenshots-track img').forEach(function(img){if(!img.classList.contains('clone'))lbImages.push(img.src)})}
+function openLightbox(src){collectImages();lbIdx=lbImages.indexOf(src);document.getElementById('lightbox-img').src=src;document.getElementById('lightbox').classList.add('open');document.body.style.overflow='hidden'}
+function closeLightbox(){document.getElementById('lightbox').classList.remove('open');document.body.style.overflow=''}
+function navLightbox(dir){lbIdx=(lbIdx+dir+lbImages.length)%lbImages.length;document.getElementById('lightbox-img').src=lbImages[lbIdx]}
+document.addEventListener('keydown',function(e){if(!document.getElementById('lightbox').classList.contains('open'))return;if(e.key==='Escape')closeLightbox();if(e.key==='ArrowLeft')navLightbox(-1);if(e.key==='ArrowRight')navLightbox(1)});
+function goToSlide(idx,animate){var c=document.getElementById('track');if(!c)return;if(!animate)c.style.transition='none';c.style.transform='translateX(-'+(idx*100)+'%)';if(!animate)c.offsetHeight;if(!animate)c.style.transition='transform 0.4s ease-in-out'}
+function scrollShot(dir){if(wrapping)return;var c=document.getElementById('track'),n=realCount;currentIdx+=dir;goToSlide(currentIdx+1,true);if((dir>0&&currentIdx>=n)||(dir<0&&currentIdx<0)){wrapping=true;setTimeout(function(){currentIdx=dir>0?0:n-1;goToSlide(currentIdx+1,false);wrapping=false},420)}}
+document.addEventListener('DOMContentLoaded',function(){var c=document.getElementById('track'),imgs=c.querySelectorAll('img');realCount=imgs.length;var first=imgs[0].cloneNode(true);first.classList.add('clone');c.appendChild(first);var last=imgs[imgs.length-1].cloneNode(true);last.classList.add('clone');c.insertBefore(last,imgs[0]);currentIdx=0;goToSlide(1,false)});
+document.addEventListener('DOMContentLoaded',function(){total=document.getElementById('screenshots').querySelectorAll('img').length});
+</script>
 </body>
 </html>

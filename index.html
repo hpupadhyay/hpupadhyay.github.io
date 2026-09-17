@@ -16,6 +16,7 @@
   <div class="container">
     <a href="index.html" class="nav-brand">Hari Prasad Upadhyay</a>
     <div class="nav-links">
+      <a href="index.html">Home</a>
       <a href="apps/public.html">Apps</a>
       <a href="apps/testing.html">Testing</a>
       <a href="apps/development.html">In Progress</a>
@@ -31,6 +32,7 @@
 <!-- Hero -->
 <div class="hero">
   <div class="container">
+    <div class="hero-badge"><span class="pulse"></span> Currently building 5 new apps</div>
     <h1>I build Android apps that work offline and respect your privacy.</h1>
     <p class="subtitle">No accounts. No cloud. No tracking. Just tools that do their job and keep your data on your phone.</p>
     <div class="hero-actions">
@@ -56,8 +58,8 @@
       <span class="stat-label">Coming Soon</span>
     </div>
     <div class="stat-item">
-      <span class="stat-number">0</span>
-      <span class="stat-label">Servers Used</span>
+      <span class="stat-number">11</span>
+      <span class="stat-label">Total Apps</span>
     </div>
   </div>
 </div>
@@ -192,25 +194,33 @@
         <h3>On the Play Store</h3>
         <p>Stable, tested, ready to use. Download them right now.</p>
         <span class="cat-count">2 apps</span>
+        <div style="margin-top:12px;display:flex;gap:8px;justify-content:center;">
+          <span style="font-size:0.7em;background:#000;color:#fff;padding:4px 10px;border-radius:6px;font-weight:600;">&#x25B6; Play Store</span>
+        </div>
       </a>
 
       <a class="cat-card testing" href="apps/testing.html">
         <span class="cat-badge badge-testing">Early Access</span>
-        <h3>Beta testing</h3>
+        <h3>Beta Testing</h3>
         <p>Almost there. Need real people to break them before release. Join the tester group to try them.</p>
         <span class="cat-count">4 apps</span>
+        <div style="margin-top:12px;display:flex;gap:8px;justify-content:center;">
+          <span style="font-size:0.7em;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:4px 10px;border-radius:6px;font-weight:600;">Join Group</span>
+        </div>
       </a>
 
       <a class="cat-card dev" href="apps/development.html">
         <span class="cat-badge badge-dev">WIP</span>
-        <h3>Still cooking</h3>
-        <p>Half-built ideas I'm working on. Some are close, some are just sketches.</p>
+        <h3>Under Development</h3>
+        <p>Apps currently being built. Get a sneak peek at what's coming next.</p>
         <span class="cat-count">5 apps</span>
       </a>
 
     </div>
   </div>
 </div>
+
+
 
 <!-- FAQ -->
 <div class="faq section-pad">
@@ -245,6 +255,13 @@
 </div>
 
 </main>
+
+<!-- CTA Banner -->
+<div class="cta-banner">
+  <h2>Want to try early access apps?</h2>
+  <p>Join 50+ testers getting early access to new apps before public release. Your feedback shapes the final product.</p>
+  <a href="https://groups.google.com/g/build--test-app-club" target="_blank" class="btn-white">Join Tester's Group &rarr;</a>
+</div>
 
 <!-- Footer -->
 <footer class="footer">
@@ -286,6 +303,13 @@ document.querySelectorAll('.faq-q').forEach(function(btn) {
     document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); });
     if (!wasOpen) item.classList.add('open');
   });
+});
+document.addEventListener('click', function(e) {
+  var nav = document.querySelector('.nav-links');
+  var toggle = document.querySelector('.nav-toggle');
+  if (nav && nav.classList.contains('open') && !nav.contains(e.target) && !toggle.contains(e.target)) {
+    nav.classList.remove('open');
+  }
 });
 </script>
 
