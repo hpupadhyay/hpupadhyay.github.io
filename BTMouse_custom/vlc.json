@@ -1,0 +1,28 @@
+{
+  "id": "vlc",
+  "name": "VLC Player",
+  "category": "VLC",
+  "description": "VLC hotkeys: playback, seeking, speed control and media keys.",
+  "source": "BUNDLED",
+  "layoutVersion": 1,
+  "actions": [
+    { "label": "Play/Pause", "type": "KEY", "keycode": 44, "keyLabel": "Space" },
+    { "label": "Fullscreen", "type": "KEY", "keycode": 9, "keyLabel": "F" },
+    { "label": "Mute", "type": "KEY", "keycode": 16, "keyLabel": "M" },
+    { "label": "Stop", "type": "KEY", "keycode": 22, "keyLabel": "S" },
+    { "label": "Next", "type": "KEY", "keycode": 17, "keyLabel": "N" },
+    { "label": "Prev", "type": "KEY", "keycode": 19, "keyLabel": "P" },
+    { "label": "-10s", "type": "COMBO", "alt": true, "keycode": 80, "keyLabel": "Left" },
+    { "label": "+10s", "type": "COMBO", "alt": true, "keycode": 79, "keyLabel": "Right" },
+    { "label": "-60s", "type": "COMBO", "ctrl": true, "keycode": 80, "keyLabel": "Left" },
+    { "label": "+60s", "type": "COMBO", "ctrl": true, "keycode": 79, "keyLabel": "Right" },
+    { "label": "Faster", "type": "COMBO", "shift": true, "keycode": 46, "keyLabel": "=" },
+    { "label": "Slower", "type": "COMBO", "shift": true, "keycode": 45, "keyLabel": "-" },
+    { "label": "Vol +", "type": "MEDIA", "consumerCode": 1 },
+    { "label": "Vol -", "type": "MEDIA", "consumerCode": 2 },
+    { "label": "Media Next", "type": "MEDIA", "consumerCode": 16 },
+    { "label": "Media Prev", "type": "MEDIA", "consumerCode": 32 },
+    { "label": "Media Stop", "type": "MEDIA", "consumerCode": 64 },
+    { "label": "Esc/Exit FS", "type": "KEY", "keycode": 41, "keyLabel": "Esc" }
+  ]
+}

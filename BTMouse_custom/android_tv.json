@@ -1,0 +1,28 @@
+{
+  "id": "android_tv",
+  "name": "Android TV Remote",
+  "category": "ANDROID_TV",
+  "description": "D-pad navigation, OK, Back, Home and media controls for Android TV boxes and TVs.",
+  "source": "BUNDLED",
+  "layoutVersion": 1,
+  "actions": [
+    { "label": "Up", "type": "KEY", "keycode": 82, "keyLabel": "Up" },
+    { "label": "Left", "type": "KEY", "keycode": 80, "keyLabel": "Left" },
+    { "label": "OK", "type": "KEY", "keycode": 40, "keyLabel": "Enter" },
+    { "label": "Right", "type": "KEY", "keycode": 79, "keyLabel": "Right" },
+    { "label": "Down", "type": "KEY", "keycode": 81, "keyLabel": "Down" },
+    { "label": "Back", "type": "KEY", "keycode": 41, "keyLabel": "Esc" },
+    { "label": "Home", "type": "KEY", "keycode": 74, "keyLabel": "Home" },
+    { "label": "Menu", "type": "MEDIA", "consumerCode": 256 },
+    { "label": "Vol +", "type": "MEDIA", "consumerCode": 1 },
+    { "label": "Mute", "type": "MEDIA", "consumerCode": 4 },
+    { "label": "Vol -", "type": "MEDIA", "consumerCode": 2 },
+    { "label": "CH +", "type": "KEY", "keycode": 75, "keyLabel": "PgUp" },
+    { "label": "Play/Pause", "type": "MEDIA", "consumerCode": 8 },
+    { "label": "CH -", "type": "KEY", "keycode": 78, "keyLabel": "PgDn" },
+    { "label": "Prev", "type": "MEDIA", "consumerCode": 32 },
+    { "label": "Stop", "type": "MEDIA", "consumerCode": 64 },
+    { "label": "Next", "type": "MEDIA", "consumerCode": 16 },
+    { "label": "Power", "type": "MEDIA", "consumerCode": 128 }
+  ]
+}

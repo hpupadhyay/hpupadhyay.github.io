@@ -1,0 +1,28 @@
+{
+  "id": "chrome",
+  "name": "Chrome Browser",
+  "category": "CHROME",
+  "description": "Tab management, address bar, find, history and navigation for Google Chrome.",
+  "source": "BUNDLED",
+  "layoutVersion": 1,
+  "actions": [
+    { "label": "New Tab", "type": "COMBO", "ctrl": true, "keycode": 23, "keyLabel": "T" },
+    { "label": "Close Tab", "type": "COMBO", "ctrl": true, "keycode": 26, "keyLabel": "W" },
+    { "label": "Reopen Tab", "type": "COMBO", "ctrl": true, "shift": true, "keycode": 23, "keyLabel": "T" },
+    { "label": "Address Bar", "type": "COMBO", "ctrl": true, "keycode": 15, "keyLabel": "L" },
+    { "label": "Next Tab", "type": "COMBO", "ctrl": true, "keycode": 43, "keyLabel": "Tab" },
+    { "label": "Prev Tab", "type": "COMBO", "ctrl": true, "shift": true, "keycode": 43, "keyLabel": "Tab" },
+    { "label": "Refresh", "type": "KEY", "keycode": 62, "keyLabel": "F5" },
+    { "label": "Find", "type": "COMBO", "ctrl": true, "keycode": 9, "keyLabel": "F" },
+    { "label": "Back", "type": "COMBO", "alt": true, "keycode": 80, "keyLabel": "Left" },
+    { "label": "Forward", "type": "COMBO", "alt": true, "keycode": 79, "keyLabel": "Right" },
+    { "label": "History", "type": "COMBO", "ctrl": true, "keycode": 11, "keyLabel": "H" },
+    { "label": "Downloads", "type": "COMBO", "ctrl": true, "keycode": 13, "keyLabel": "J" },
+    { "label": "Fullscreen", "type": "KEY", "keycode": 68, "keyLabel": "F11" },
+    { "label": "Home", "type": "KEY", "keycode": 74, "keyLabel": "Home" },
+    { "label": "Select All", "type": "COMBO", "ctrl": true, "keycode": 4, "keyLabel": "A" },
+    { "label": "Copy", "type": "COMBO", "ctrl": true, "keycode": 6, "keyLabel": "C" },
+    { "label": "Paste", "type": "COMBO", "ctrl": true, "keycode": 25, "keyLabel": "V" },
+    { "label": "New Window", "type": "COMBO", "ctrl": true, "keycode": 29, "keyLabel": "N" }
+  ]
+}

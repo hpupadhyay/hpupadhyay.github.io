@@ -1,0 +1,28 @@
+{
+  "id": "browser",
+  "name": "Web Browser",
+  "category": "BROWSER",
+  "description": "Works in any browser: tabs, address bar, navigation and clipboard basics.",
+  "source": "BUNDLED",
+  "layoutVersion": 1,
+  "actions": [
+    { "label": "New Tab", "type": "COMBO", "ctrl": true, "keycode": 23, "keyLabel": "T" },
+    { "label": "Close Tab", "type": "COMBO", "ctrl": true, "keycode": 26, "keyLabel": "W" },
+    { "label": "Address Bar", "type": "COMBO", "ctrl": true, "keycode": 15, "keyLabel": "L" },
+    { "label": "Next Tab", "type": "COMBO", "ctrl": true, "keycode": 43, "keyLabel": "Tab" },
+    { "label": "Refresh", "type": "KEY", "keycode": 62, "keyLabel": "F5" },
+    { "label": "Back", "type": "COMBO", "alt": true, "keycode": 80, "keyLabel": "Left" },
+    { "label": "Forward", "type": "COMBO", "alt": true, "keycode": 79, "keyLabel": "Right" },
+    { "label": "Home", "type": "KEY", "keycode": 74, "keyLabel": "Home" },
+    { "label": "Select All", "type": "COMBO", "ctrl": true, "keycode": 4, "keyLabel": "A" },
+    { "label": "Copy", "type": "COMBO", "ctrl": true, "keycode": 6, "keyLabel": "C" },
+    { "label": "Cut", "type": "COMBO", "ctrl": true, "keycode": 27, "keyLabel": "X" },
+    { "label": "Paste", "type": "COMBO", "ctrl": true, "keycode": 25, "keyLabel": "V" },
+    { "label": "Find", "type": "COMBO", "ctrl": true, "keycode": 9, "keyLabel": "F" },
+    { "label": "Print", "type": "COMBO", "ctrl": true, "keycode": 24, "keyLabel": "P" },
+    { "label": "Save", "type": "COMBO", "ctrl": true, "keycode": 22, "keyLabel": "S" },
+    { "label": "Page Down", "type": "KEY", "keycode": 78, "keyLabel": "PgDn" },
+    { "label": "Page Up", "type": "KEY", "keycode": 75, "keyLabel": "PgUp" },
+    { "label": "Enter", "type": "KEY", "keycode": 40, "keyLabel": "Enter" }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "youtube",
+  "name": "YouTube",
+  "category": "YOUTUBE",
+  "description": "Playback shortcuts for YouTube: seek, fullscreen, theater, captions and volume.",
+  "source": "BUNDLED",
+  "layoutVersion": 1,
+  "actions": [
+    { "label": "Play/Pause", "type": "KEY", "keycode": 14, "keyLabel": "K" },
+    { "label": "Fullscreen", "type": "KEY", "keycode": 9, "keyLabel": "F" },
+    { "label": "Mute", "type": "KEY", "keycode": 16, "keyLabel": "M" },
+    { "label": "-10s", "type": "KEY", "keycode": 13, "keyLabel": "J" },
+    { "label": "+10s", "type": "KEY", "keycode": 15, "keyLabel": "L" },
+    { "label": "-5s", "type": "KEY", "keycode": 80, "keyLabel": "Left" },
+    { "label": "+5s", "type": "KEY", "keycode": 79, "keyLabel": "Right" },
+    { "label": "Vol +", "type": "KEY", "keycode": 82, "keyLabel": "Up" },
+    { "label": "Vol -", "type": "KEY", "keycode": 81, "keyLabel": "Down" },
+    { "label": "Theater", "type": "KEY", "keycode": 23, "keyLabel": "T" },
+    { "label": "Miniplayer", "type": "KEY", "keycode": 12, "keyLabel": "I" },
+    { "label": "Captions", "type": "KEY", "keycode": 6, "keyLabel": "C" },
+    { "label": "Shorts/Next", "type": "KEY", "keycode": 43, "keyLabel": "Tab" },
+    { "label": "Search", "type": "COMBO", "ctrl": true, "keycode": 15, "keyLabel": "L" },
+    { "label": "Prev Video", "type": "MEDIA", "consumerCode": 32 },
+    { "label": "Media Next", "type": "MEDIA", "consumerCode": 16 },
+    { "label": "Stop", "type": "MEDIA", "consumerCode": 64 },
+    { "label": "Mute (media)", "type": "MEDIA", "consumerCode": 4 }
+  ]
+}
