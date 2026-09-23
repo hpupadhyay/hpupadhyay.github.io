@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "updated": 1758624000,
+  "layouts": [
+    {
+      "id": "android_tv",
+      "name": "Android TV Remote",
+      "category": "ANDROID_TV",
+      "description": "D-pad navigation, OK, Back, Home and media controls for Android TV boxes and TVs.",
+      "file": "android_tv.json",
+      "layoutVersion": 1
+    },
+    {
+      "id": "smart_tv",
+      "name": "Smart TV Remote",
+      "category": "SMART_TV",
+      "description": "Full smart-TV remote: navigation, channels, volume and playback for Samsung/LG style TVs.",
+      "file": "smart_tv.json",
+      "layoutVersion": 1
+    },
+    {
+      "id": "chrome",
+      "name": "Chrome Browser",
+      "category": "CHROME",
+      "description": "Tab management, address bar, find, history and navigation for Google Chrome.",
+      "file": "chrome.json",
+      "layoutVersion": 1
+    },
+    {
+      "id": "youtube",
+      "name": "YouTube",
+      "category": "YOUTUBE",
+      "description": "Playback shortcuts for YouTube: seek, fullscreen, theater, captions and volume.",
+      "file": "youtube.json",
+      "layoutVersion": 1
+    },
+    {
+      "id": "vlc",
+      "name": "VLC Player",
+      "category": "VLC",
+      "description": "VLC hotkeys: playback, seeking, speed control and media keys.",
+      "file": "vlc.json",
+      "layoutVersion": 1
+    },
+    {
+      "id": "browser",
+      "name": "Web Browser",
+      "category": "BROWSER",
+      "description": "Works in any browser: tabs, address bar, navigation and clipboard basics.",
+      "file": "browser.json",
+      "layoutVersion": 1
+    }
+  ]
+}
