@@ -4,7 +4,7 @@
   "category": "SMART_TV",
   "description": "Full smart-TV remote: big power, D-pad, channel/volume and a number pad for Samsung/LG style TVs.",
   "source": "BUNDLED",
-  "layoutVersion": 2,
+  "layoutVersion": 1,
   "actions": [
     { "label": "Power", "type": "MEDIA", "consumerCode": 128, "rowSpan": 2, "colSpan": 2 },
     { "label": "Source", "type": "KEY", "keycode": 74, "keyLabel": "Source" },

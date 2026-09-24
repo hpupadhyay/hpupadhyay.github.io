@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": 1762560000,
+  "updated": 1790237919,
   "layouts": [
     {
       "id": "android_tv",
@@ -24,7 +24,7 @@
       "category": "CHROME",
       "description": "Tab management, address bar, find, history and navigation for Google Chrome.",
       "file": "chrome.json",
-      "layoutVersion": 2
+      "layoutVersion": 3
     },
     {
       "id": "youtube",
@@ -48,7 +48,7 @@
       "category": "BROWSER",
       "description": "Works in any browser: tabs, address bar, navigation and clipboard basics.",
       "file": "browser.json",
-      "layoutVersion": 2
+      "layoutVersion": 3
     },
     {
       "id": "excel",

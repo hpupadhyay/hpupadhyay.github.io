@@ -4,7 +4,7 @@
   "category": "CHROME",
   "description": "Tab management, address bar, find, history and navigation for Google Chrome.",
   "source": "BUNDLED",
-  "layoutVersion": 2,
+  "layoutVersion": 1,
   "actions": [
     { "label": "New Tab", "type": "COMBO", "ctrl": true, "keycode": 23, "keyLabel": "T" },
     { "label": "Close Tab", "type": "COMBO", "ctrl": true, "keycode": 26, "keyLabel": "W" },
@@ -30,9 +30,10 @@
       "icon": "Terminal",
       "color": "YELLOW",
       "steps": [
-        { "type": "KEY", "ctrl": true, "shift": true, "keycode": 19, "keyLabel": "P" },
-        { "type": "TEXT", "text": "capture full size screenshot" },
-        { "type": "KEY", "keycode": 40, "keyLabel": "Enter" }
+        { "type": "KEY", "ctrl": true, "shift": true, "keycode": 12, "keyLabel": "I", "delay": 500 },
+        { "type": "KEY", "ctrl": true, "shift": true, "keycode": 19, "keyLabel": "P", "delay": 1000 },
+        { "type": "TEXT", "text": "capture full size screenshot", "delay": 200 },
+        { "type": "KEY", "keycode": 40, "keyLabel": "Enter", "delay": 200 }
       ]
     }
   ]
