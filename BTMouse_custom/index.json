@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": 1762387200,
+  "updated": 1762560000,
   "layouts": [
     {
       "id": "android_tv",
@@ -48,6 +48,46 @@
       "category": "BROWSER",
       "description": "Works in any browser: tabs, address bar, navigation and clipboard basics.",
       "file": "browser.json",
+      "layoutVersion": 1
+    },
+    {
+      "id": "excel",
+      "name": "Microsoft Excel",
+      "category": "EXCEL",
+      "description": "Spreadsheet shortcuts for Excel: formatting, clipboard, find & replace, navigation and cell editing.",
+      "file": "excel.json",
+      "layoutVersion": 1
+    },
+    {
+      "id": "word",
+      "name": "Microsoft Word",
+      "category": "WORD",
+      "description": "Document editing shortcuts for Word: formatting, alignment, clipboard, find & replace and navigation.",
+      "file": "word.json",
+      "layoutVersion": 1
+    },
+    {
+      "id": "powerpoint",
+      "name": "PowerPoint",
+      "category": "POWERPOINT",
+      "description": "Presentation shortcuts for PowerPoint: slide control, show mode, zoom, formatting and clipboard.",
+      "file": "powerpoint.json",
+      "layoutVersion": 1
+    },
+    {
+      "id": "notepad",
+      "name": "Notepad",
+      "category": "NOTEPAD",
+      "description": "Plain-text editing shortcuts for Notepad and editor apps: clipboard, find, zoom and date/time.",
+      "file": "notepad.json",
+      "layoutVersion": 1
+    },
+    {
+      "id": "files",
+      "name": "File Explorer",
+      "category": "FILES",
+      "description": "Windows File Explorer shortcuts: navigation, new folders, renaming, clipboard and properties.",
+      "file": "files.json",
       "layoutVersion": 1
     }
   ]

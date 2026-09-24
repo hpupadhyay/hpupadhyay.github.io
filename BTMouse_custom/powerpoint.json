@@ -1,0 +1,31 @@
+{
+  "id": "powerpoint",
+  "name": "PowerPoint",
+  "category": "POWERPOINT",
+  "description": "Presentation shortcuts for PowerPoint: slide control, show mode, zoom, formatting and clipboard.",
+  "source": "BUNDLED",
+  "layoutVersion": 1,
+  "actions": [
+    { "label": "New Slide", "type": "COMBO", "ctrl": true, "keycode": 16, "keyLabel": "M", "icon": "Add" },
+    { "label": "Duplicate", "type": "COMBO", "ctrl": true, "keycode": 7, "keyLabel": "D", "icon": "Copy" },
+    { "label": "Delete Slide", "type": "KEY", "keycode": 76, "keyLabel": "Del", "icon": "Delete", "color": "RED" },
+    { "label": "From Start", "type": "KEY", "keycode": 62, "keyLabel": "F5", "icon": "PlayArrow" },
+    { "label": "From Current", "type": "COMBO", "shift": true, "keycode": 62, "keyLabel": "F5", "icon": "SkipNext" },
+    { "label": "End Show", "type": "KEY", "keycode": 41, "keyLabel": "Esc", "icon": "Close", "color": "RED" },
+    { "label": "Prev Slide", "type": "KEY", "keycode": 75, "keyLabel": "PgUp", "icon": "ArrowUp" },
+    { "label": "Next Slide", "type": "KEY", "keycode": 78, "keyLabel": "PgDn", "icon": "ArrowDown" },
+    { "label": "Last Slide", "type": "KEY", "keycode": 77, "keyLabel": "End", "icon": "KeyboardArrowRight" },
+    { "label": "Undo", "type": "COMBO", "ctrl": true, "keycode": 29, "keyLabel": "Z", "icon": "Undo" },
+    { "label": "Redo", "type": "COMBO", "ctrl": true, "keycode": 28, "keyLabel": "Y", "icon": "Redo" },
+    { "label": "Save", "type": "COMBO", "ctrl": true, "keycode": 22, "keyLabel": "S", "icon": "Save" },
+    { "label": "Zoom +", "type": "COMBO", "ctrl": true, "keycode": 46, "keyLabel": "+", "icon": "ZoomIn" },
+    { "label": "Zoom -", "type": "COMBO", "ctrl": true, "keycode": 45, "keyLabel": "-", "icon": "ZoomOut" },
+    { "label": "Fit to Screen", "type": "COMBO", "ctrl": true, "keycode": 4, "keyLabel": "A", "icon": "Fullscreen" },
+    { "label": "Bold", "type": "COMBO", "ctrl": true, "keycode": 5, "keyLabel": "B", "icon": "Bold" },
+    { "label": "Italic", "type": "COMBO", "ctrl": true, "keycode": 12, "keyLabel": "I", "icon": "Italic" },
+    { "label": "Underline", "type": "COMBO", "ctrl": true, "keycode": 24, "keyLabel": "U", "icon": "Underline" },
+    { "label": "Copy", "type": "COMBO", "ctrl": true, "keycode": 6, "keyLabel": "C", "icon": "Copy" },
+    { "label": "Cut", "type": "COMBO", "ctrl": true, "keycode": 27, "keyLabel": "X", "icon": "Cut" },
+    { "label": "Paste", "type": "COMBO", "ctrl": true, "keycode": 25, "keyLabel": "V", "icon": "Paste" }
+  ]
+}

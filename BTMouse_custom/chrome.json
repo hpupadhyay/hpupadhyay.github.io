@@ -23,6 +23,6 @@
     { "label": "Select All", "type": "COMBO", "ctrl": true, "keycode": 4, "keyLabel": "A" },
     { "label": "Copy", "type": "COMBO", "ctrl": true, "keycode": 6, "keyLabel": "C" },
     { "label": "Paste", "type": "COMBO", "ctrl": true, "keycode": 25, "keyLabel": "V" },
-    { "label": "New Window", "type": "COMBO", "ctrl": true, "keycode": 29, "keyLabel": "N" }
+    { "label": "New Window", "type": "COMBO", "ctrl": true, "keycode": 17, "keyLabel": "N" }
   ]
 }

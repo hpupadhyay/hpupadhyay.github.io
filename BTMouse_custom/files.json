@@ -1,0 +1,28 @@
+{
+  "id": "files",
+  "name": "File Explorer",
+  "category": "FILES",
+  "description": "Windows File Explorer shortcuts: navigation, new folders, renaming, clipboard and properties.",
+  "source": "BUNDLED",
+  "layoutVersion": 1,
+  "actions": [
+    { "label": "Address Bar", "type": "COMBO", "ctrl": true, "keycode": 15, "keyLabel": "L", "icon": "Public" },
+    { "label": "Search", "type": "KEY", "keycode": 61, "keyLabel": "F3", "icon": "Search" },
+    { "label": "Refresh", "type": "KEY", "keycode": 62, "keyLabel": "F5", "icon": "Refresh" },
+    { "label": "New Folder", "type": "COMBO", "ctrl": true, "shift": true, "keycode": 17, "keyLabel": "N", "icon": "Folder", "color": "YELLOW" },
+    { "label": "Rename", "type": "KEY", "keycode": 59, "keyLabel": "F2", "icon": "Edit" },
+    { "label": "Delete", "type": "KEY", "keycode": 76, "keyLabel": "Del", "icon": "Delete", "color": "RED" },
+    { "label": "Copy", "type": "COMBO", "ctrl": true, "keycode": 6, "keyLabel": "C", "icon": "Copy" },
+    { "label": "Cut", "type": "COMBO", "ctrl": true, "keycode": 27, "keyLabel": "X", "icon": "Cut" },
+    { "label": "Paste", "type": "COMBO", "ctrl": true, "keycode": 25, "keyLabel": "V", "icon": "Paste" },
+    { "label": "Select All", "type": "COMBO", "ctrl": true, "keycode": 4, "keyLabel": "A", "icon": "SelectAll", "colSpan": 3 },
+    { "label": "Back", "type": "COMBO", "alt": true, "keycode": 80, "keyLabel": "Left", "icon": "ArrowLeft" },
+    { "label": "Up Folder", "type": "COMBO", "alt": true, "keycode": 82, "keyLabel": "Up", "icon": "ArrowUp" },
+    { "label": "Properties", "type": "COMBO", "alt": true, "keycode": 40, "keyLabel": "Enter", "icon": "Info" },
+    { "label": "Home", "type": "KEY", "keycode": 74, "keyLabel": "Home", "icon": "Home" },
+    { "label": "This PC", "type": "COMBO", "win": true, "keycode": 8, "keyLabel": "E", "icon": "Widgets" },
+    { "label": "New Window", "type": "COMBO", "ctrl": true, "keycode": 17, "keyLabel": "N", "icon": "OpenInNew" },
+    { "label": "Zoom In", "type": "COMBO", "ctrl": true, "keycode": 46, "keyLabel": "+", "icon": "ZoomIn" },
+    { "label": "Zoom Out", "type": "COMBO", "ctrl": true, "keycode": 45, "keyLabel": "-", "icon": "ZoomOut" }
+  ]
+}

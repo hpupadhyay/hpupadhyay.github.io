@@ -1,0 +1,32 @@
+{
+  "id": "excel",
+  "name": "Microsoft Excel",
+  "category": "EXCEL",
+  "description": "Spreadsheet shortcuts for Excel: formatting, clipboard, find & replace, navigation and cell editing.",
+  "source": "BUNDLED",
+  "layoutVersion": 1,
+  "actions": [
+    { "label": "Undo", "type": "COMBO", "ctrl": true, "keycode": 29, "keyLabel": "Z", "icon": "Undo" },
+    { "label": "Redo", "type": "COMBO", "ctrl": true, "keycode": 28, "keyLabel": "Y", "icon": "Redo" },
+    { "label": "Save", "type": "COMBO", "ctrl": true, "keycode": 22, "keyLabel": "S", "icon": "Save" },
+    { "label": "Cut", "type": "COMBO", "ctrl": true, "keycode": 27, "keyLabel": "X", "icon": "Cut" },
+    { "label": "Copy", "type": "COMBO", "ctrl": true, "keycode": 6, "keyLabel": "C", "icon": "Copy" },
+    { "label": "Paste", "type": "COMBO", "ctrl": true, "keycode": 25, "keyLabel": "V", "icon": "Paste" },
+    { "label": "Bold", "type": "COMBO", "ctrl": true, "keycode": 5, "keyLabel": "B", "icon": "Bold", "colSpan": 2 },
+    { "label": "Italic", "type": "COMBO", "ctrl": true, "keycode": 12, "keyLabel": "I", "icon": "Italic" },
+    { "label": "Underline", "type": "COMBO", "ctrl": true, "keycode": 24, "keyLabel": "U", "icon": "Underline" },
+    { "label": "Find", "type": "COMBO", "ctrl": true, "keycode": 9, "keyLabel": "F", "icon": "Search" },
+    { "label": "Replace", "type": "COMBO", "ctrl": true, "keycode": 11, "keyLabel": "H", "icon": "Edit", "color": "YELLOW" },
+    { "label": "Go To", "type": "COMBO", "ctrl": true, "keycode": 10, "keyLabel": "G", "icon": "Check" },
+    { "label": "Select All", "type": "COMBO", "ctrl": true, "keycode": 4, "keyLabel": "A", "icon": "SelectAll", "colSpan": 3 },
+    { "label": "Edit Cell", "type": "KEY", "keycode": 59, "keyLabel": "F2", "icon": "Edit", "colSpan": 2 },
+    { "label": "Enter", "type": "KEY", "keycode": 40, "keyLabel": "Enter", "icon": "Check" },
+    { "label": "Esc", "type": "KEY", "keycode": 41, "keyLabel": "Esc", "icon": "Close", "color": "RED" },
+    { "label": "Fill Down", "type": "COMBO", "ctrl": true, "keycode": 7, "keyLabel": "D", "icon": "ArrowDown" },
+    { "label": "Sum", "type": "COMBO", "alt": true, "keycode": 46, "keyLabel": "=", "icon": "Add", "color": "YELLOW" },
+    { "label": "Insert Row", "type": "COMBO", "ctrl": true, "shift": true, "keycode": 46, "keyLabel": "+", "icon": "Add" },
+    { "label": "Home", "type": "KEY", "keycode": 74, "keyLabel": "Home", "icon": "Home" },
+    { "label": "End", "type": "KEY", "keycode": 77, "keyLabel": "End", "icon": "KeyboardArrowRight" },
+    { "label": "Delete", "type": "KEY", "keycode": 76, "keyLabel": "Del", "icon": "Delete", "color": "RED" }
+  ]
+}

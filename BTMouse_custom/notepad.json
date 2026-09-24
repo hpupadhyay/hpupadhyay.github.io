@@ -1,0 +1,28 @@
+{
+  "id": "notepad",
+  "name": "Notepad",
+  "category": "NOTEPAD",
+  "description": "Plain-text editing shortcuts for Notepad and editor apps: clipboard, find, zoom and date/time.",
+  "source": "BUNDLED",
+  "layoutVersion": 1,
+  "actions": [
+    { "label": "New", "type": "COMBO", "ctrl": true, "keycode": 17, "keyLabel": "N", "icon": "Add" },
+    { "label": "Open", "type": "COMBO", "ctrl": true, "keycode": 18, "keyLabel": "O", "icon": "Folder" },
+    { "label": "Save", "type": "COMBO", "ctrl": true, "keycode": 22, "keyLabel": "S", "icon": "Save" },
+    { "label": "Save As", "type": "KEY", "keycode": 69, "keyLabel": "F12", "icon": "Save" },
+    { "label": "Undo", "type": "COMBO", "ctrl": true, "keycode": 29, "keyLabel": "Z", "icon": "Undo" },
+    { "label": "Redo", "type": "COMBO", "ctrl": true, "keycode": 28, "keyLabel": "Y", "icon": "Redo" },
+    { "label": "Cut", "type": "COMBO", "ctrl": true, "keycode": 27, "keyLabel": "X", "icon": "Cut" },
+    { "label": "Copy", "type": "COMBO", "ctrl": true, "keycode": 6, "keyLabel": "C", "icon": "Copy" },
+    { "label": "Paste", "type": "COMBO", "ctrl": true, "keycode": 25, "keyLabel": "V", "icon": "Paste" },
+    { "label": "Select All", "type": "COMBO", "ctrl": true, "keycode": 4, "keyLabel": "A", "icon": "SelectAll", "colSpan": 3 },
+    { "label": "Find", "type": "COMBO", "ctrl": true, "keycode": 9, "keyLabel": "F", "icon": "Search" },
+    { "label": "Replace", "type": "COMBO", "ctrl": true, "keycode": 11, "keyLabel": "H", "icon": "Edit", "color": "YELLOW" },
+    { "label": "Go To Line", "type": "COMBO", "ctrl": true, "keycode": 10, "keyLabel": "G", "icon": "KeyboardArrowRight" },
+    { "label": "Date/Time", "type": "KEY", "keycode": 62, "keyLabel": "F5", "icon": "CalendarToday" },
+    { "label": "Zoom +", "type": "COMBO", "ctrl": true, "keycode": 46, "keyLabel": "+", "icon": "ZoomIn" },
+    { "label": "Zoom -", "type": "COMBO", "ctrl": true, "keycode": 45, "keyLabel": "-", "icon": "ZoomOut" },
+    { "label": "Home", "type": "KEY", "keycode": 74, "keyLabel": "Home", "icon": "Home" },
+    { "label": "End", "type": "KEY", "keycode": 77, "keyLabel": "End", "icon": "KeyboardArrowRight" }
+  ]
+}
