@@ -16,7 +16,7 @@
       "category": "SMART_TV",
       "description": "Full smart-TV remote: big power, D-pad, channel/volume and a number pad for Samsung/LG style TVs.",
       "file": "smart_tv.json",
-      "layoutVersion": 2
+      "layoutVersion": 1
     },
     {
       "id": "chrome",
@@ -24,7 +24,7 @@
       "category": "CHROME",
       "description": "Tab management, address bar, find, history and navigation for Google Chrome.",
       "file": "chrome.json",
-      "layoutVersion": 3
+      "layoutVersion": 1
     },
     {
       "id": "youtube",
@@ -48,7 +48,7 @@
       "category": "BROWSER",
       "description": "Works in any browser: tabs, address bar, navigation and clipboard basics.",
       "file": "browser.json",
-      "layoutVersion": 3
+      "layoutVersion": 1
     },
     {
       "id": "excel",
