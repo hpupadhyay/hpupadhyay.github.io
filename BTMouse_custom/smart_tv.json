@@ -7,7 +7,7 @@
   "layoutVersion": 2,
   "actions": [
     { "label": "Power", "type": "MEDIA", "consumerCode": 128, "rowSpan": 2, "colSpan": 2 },
-    { "label": "Source", "type": "KEY", "keycode": 74, "keyLabel": "Home" },
+    { "label": "Source", "type": "KEY", "keycode": 74, "keyLabel": "Source" },
     { "label": "Menu", "type": "MEDIA", "consumerCode": 256 },
     { "label": "Info", "type": "KEY", "keycode": 12, "keyLabel": "I" },
     { "label": "Apps", "type": "KEY", "keycode": 74, "keyLabel": "Home" },
