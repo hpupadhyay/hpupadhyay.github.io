@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": 1758624000,
+  "updated": 1762387200,
   "layouts": [
     {
       "id": "android_tv",
@@ -14,9 +14,9 @@
       "id": "smart_tv",
       "name": "Smart TV Remote",
       "category": "SMART_TV",
-      "description": "Full smart-TV remote: navigation, channels, volume and playback for Samsung/LG style TVs.",
+      "description": "Full smart-TV remote: big power, D-pad, channel/volume and a number pad for Samsung/LG style TVs.",
       "file": "smart_tv.json",
-      "layoutVersion": 1
+      "layoutVersion": 2
     },
     {
       "id": "chrome",
