@@ -4,7 +4,7 @@
   "category": "CHROME",
   "description": "Tab management, address bar, find, history and navigation for Google Chrome.",
   "source": "BUNDLED",
-  "layoutVersion": 1,
+  "layoutVersion": 2,
   "actions": [
     { "label": "New Tab", "type": "COMBO", "ctrl": true, "keycode": 23, "keyLabel": "T" },
     { "label": "Close Tab", "type": "COMBO", "ctrl": true, "keycode": 26, "keyLabel": "W" },
@@ -23,6 +23,17 @@
     { "label": "Select All", "type": "COMBO", "ctrl": true, "keycode": 4, "keyLabel": "A" },
     { "label": "Copy", "type": "COMBO", "ctrl": true, "keycode": 6, "keyLabel": "C" },
     { "label": "Paste", "type": "COMBO", "ctrl": true, "keycode": 25, "keyLabel": "V" },
-    { "label": "New Window", "type": "COMBO", "ctrl": true, "keycode": 17, "keyLabel": "N" }
+    { "label": "New Window", "type": "COMBO", "ctrl": true, "keycode": 17, "keyLabel": "N" },
+    {
+      "label": "Full Screenshot",
+      "type": "MACRO",
+      "icon": "Terminal",
+      "color": "YELLOW",
+      "steps": [
+        { "type": "KEY", "ctrl": true, "shift": true, "keycode": 19, "keyLabel": "P" },
+        { "type": "TEXT", "text": "capture full size screenshot" },
+        { "type": "KEY", "keycode": 40, "keyLabel": "Enter" }
+      ]
+    }
   ]
 }

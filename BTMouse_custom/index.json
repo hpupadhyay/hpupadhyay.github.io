@@ -24,7 +24,7 @@
       "category": "CHROME",
       "description": "Tab management, address bar, find, history and navigation for Google Chrome.",
       "file": "chrome.json",
-      "layoutVersion": 1
+      "layoutVersion": 2
     },
     {
       "id": "youtube",
@@ -48,7 +48,7 @@
       "category": "BROWSER",
       "description": "Works in any browser: tabs, address bar, navigation and clipboard basics.",
       "file": "browser.json",
-      "layoutVersion": 1
+      "layoutVersion": 2
     },
     {
       "id": "excel",
