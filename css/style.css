@@ -353,6 +353,13 @@ img { max-width: 100%; height: auto; display: block; }
 .app-hero-info .btn-play:hover { background: #1557b0; }
 .app-hero-info .btn-early { background: #f59e0b; color: #fff; }
 .app-hero-info .btn-early:hover { background: #d97706; }
+.status-badge {
+  display: inline-flex; align-items: center;
+  padding: 7px 16px; border-radius: 8px;
+  font-size: 0.85em; font-weight: 600;
+}
+.status-badge.status-development { background: #ede9fe; color: #7c3aed; }
+.status-badge.status-planning { background: #f3f4f6; color: #6b7280; }
 
 .app-body { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
 

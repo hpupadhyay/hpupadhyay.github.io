@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NeuralProxy  -  Hari Prasad Upadhyay</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a href="../index.html" class="nav-brand">Hari Prasad Upadhyay</a>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="public.html">Apps</a>
+      <a href="testing.html">Testing</a>
+      <a href="development.html" class="active">In Progress</a>
+      <a href="https://groups.google.com/g/build--test-app-club" target="_blank" class="nav-cta">Join Tester's Group</a>
+    </div>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="container app-page">
+  <a class="back" href="development.html">&larr; In Progress</a>
+
+  <div class="app-hero">
+    <img class="icon" src="../assets/neuralproxy.png" alt="NeuralProxy icon">
+    <div class="app-hero-info">
+      <h2>NeuralProxy</h2>
+      <p class="tagline">Cut LLM API costs with routing, caching and live spend tracking</p>
+      <span class="status-badge status-development">Built  -  Pre-Release</span>
+    </div>
+  </div>
+
+  <div class="app-body">
+    <div class="app-content">
+      <div class="section">
+        <h3>About</h3>
+        <p>NeuralProxy sits between your app and the LLM providers you use, and finds the cheapest option for each request without you rewriting anything. Point an existing integration at the proxy instead of a provider endpoint, and routing, caching and cost accounting happen underneath it. Typical saving is 30-50% of API spend without changing what the model is asked to do.</p>
+      </div>
+
+      <div class="section">
+        <h3>How It Works</h3>
+        <ul>
+          <li>Add your API keys for the providers you already pay for</li>
+          <li>Send requests through NeuralProxy instead of directly to a provider</li>
+          <li>NeuralProxy routes each request to the cheapest provider that can serve it</li>
+          <li>Identical requests are served from cache instead of billed again</li>
+          <li>Watch the savings accumulate on the dashboard</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Multi-Provider Support</h3>
+        <ul>
+          <li>OpenAI, Anthropic, Google Gemini, Mistral and Groq</li>
+          <li>Smart routing picks the cheapest available provider per request</li>
+          <li>One integration surface, so switching or adding a provider is configuration</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Response Caching</h3>
+        <ul>
+          <li>Identical prompts are served from cache rather than sent again</li>
+          <li>The largest saving on workloads with repeated or templated prompts</li>
+          <li>Savings are counted, not estimated, so the dashboard reflects real avoided spend</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Cost Dashboard</h3>
+        <ul>
+          <li>Real-time spending tracking and analytics</li>
+          <li>Per-request cost, per-provider cost, and total avoided spend</li>
+          <li>Prompt optimization tools, including token counting and compression suggestions</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Security &amp; Privacy</h3>
+        <ul>
+          <li>API keys stored in the Android Keystore, never in plain preferences</li>
+          <li>All data stored locally on your device</li>
+          <li>No analytics, no tracking, no accounts</li>
+          <li>Keys are only ever used to call the provider you configured</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Requirements</h3>
+        <ul>
+          <li>Android 8.0 (API 26) or higher</li>
+          <li>Internet connection for API calls</li>
+          <li>API keys from one or more supported LLM providers</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <p>&copy; 2026 Hari Prasad Upadhyay</p>
+    </div>
+  </div>
+</footer>
+<script>
+window.addEventListener('scroll',function(){document.querySelector('.nav').classList.toggle('scrolled',window.scrollY>20)});
+</script>
+</body>
+</html>

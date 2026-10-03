@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crenell  -  Hari Prasad Upadhyay</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a href="../index.html" class="nav-brand">Hari Prasad Upadhyay</a>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="public.html">Apps</a>
+      <a href="testing.html">Testing</a>
+      <a href="development.html" class="active">In Progress</a>
+      <a href="https://groups.google.com/g/build--test-app-club" target="_blank" class="nav-cta">Join Tester's Group</a>
+    </div>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="container app-page">
+  <a class="back" href="development.html">&larr; In Progress</a>
+
+  <div class="app-hero">
+    <img class="icon" src="../assets/crenell.png" alt="Crenell icon">
+    <div class="app-hero-info">
+      <h2>Crenell</h2>
+      <p class="tagline">Verified professionals asking honest questions, and getting honest answers</p>
+      <span class="status-badge status-development">Built  -  Pre-Release</span>
+    </div>
+  </div>
+
+  <div class="app-body">
+    <div class="app-content">
+      <div class="section">
+        <h3>About</h3>
+        <p>Crenell is an invite-only professional network where someone in a real decision can ask the question they cannot ask anywhere else, because nobody  -  not the answerer, not the reader, not the app  -  ever learns who they were. The privacy promise is a property of the database schema rather than a line in a privacy policy: an anonymous post is structurally unable to carry a reference to the account that wrote it.</p>
+      </div>
+
+      <div class="section">
+        <h3>Two Planes, Never Joined</h3>
+        <ul>
+          <li><strong>Identity plane</strong> (private)  -  credentials, case runs, scores, ratings, signature and the Crenell Index. Known to the system, invisible to other members.</li>
+          <li><strong>Anonymous plane</strong> (public)  -  forum questions and answers, with no link to a member. None.</li>
+          <li>A database constraint makes an anonymous content row unable to reference a member, so a bug cannot create the link</li>
+          <li>Post mode is chosen at post time and can never be edited afterwards</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Login Required, Anonymity Optional</h3>
+        <ul>
+          <li>Every route needs a signed-in account  -  no guest mode, no read-only tier, no public pages, no shareable links</li>
+          <li>Anonymous posting is a per-post choice by a logged-in member, not a special permission</li>
+          <li>Every member has an identical interface and identical privileges on day one, with no in-app privilege ladder</li>
+          <li>Scored case runs are always attributable, because an unattributable result means nothing</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>The Three Layers</h3>
+        <ul>
+          <li><strong>The Parapet</strong>  -  case-based decision exercises with deterministic consequences, answer-free Council debate, spoiler-gated Vault, and the Crenell Index. Free.</li>
+          <li><strong>The Forum</strong>  -  anonymous questions and anonymous answers. Unranked and unrated, so anonymity is free to use.</li>
+          <li><strong>The Chamber</strong>  -  a verified professional's scheduled paid sitting. Invitation only, and never purchasable.</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Disclosure Handshake</h3>
+        <ul>
+          <li>A questioner can ask an answer provider to verify their standing. The provider decides.</li>
+          <li>One request, one decision, three outcomes: accepted, declined, or ignored</li>
+          <li>Only the requester ever learns the result, one member at a time, by consent</li>
+          <li>A request can never contain a proposed or guessed identity, which would turn the feature into a confirmation oracle</li>
+          <li>Disclosure volume is never displayed, never ranked, and never enters the Index</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Where Anonymity Actually Leaks</h3>
+        <ul>
+          <li>Posting named and anonymous about the same subject in the same room  -  a deliberate mode with a persistent indicator, plus a self-exposure warning before an anonymous post</li>
+          <li>Small populations  -  anonymity quorum is enforced structurally below a minimum room size</li>
+          <li>Cross-thread correlation  -  handles rotate per thread, so nothing correlates across the forum</li>
+          <li>Interaction fingerprints  -  no typing speed, no read receipts, no presence, no precise timestamps</li>
+          <li>Notification leakage  -  never a push notification that reveals who replied to a specific anonymous post</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Content Protection</h3>
+        <ul>
+          <li>Android <code>FLAG_SECURE</code> on every window, so screenshots and the task-switcher thumbnail are blocked</li>
+          <li>No share sheet, no copy-link, no deep links, no web view anywhere in the client</li>
+          <li>Not discoverable by search, because no public or cacheable route exists at all</li>
+          <li>The honest limit is recorded in the product plan rather than hidden: this does not stop an external camera, a screen mirror, or a member who retells the conversation later</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>How It Is Built</h3>
+        <ul>
+          <li>Flutter client with a single auth gate and no named-route table, so no screen can bypass sign-in</li>
+          <li>Fastify server and Postgres, with a not-found handler that returns 401 so an unbuilt route fails closed</li>
+          <li>The scoring engine is deterministic and replayed byte-for-byte against golden fixtures, because a live model cannot adjudicate a score consistently</li>
+          <li>Guards are CI-enforced: plane-seam isolation, commercial/merit isolation, case arithmetic, and a check that each case teaches what it claims</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Current Status</h3>
+        <ul>
+          <li>Phase 0 complete  -  schema, auth wall, content protection and the isolation guards are all in place</li>
+          <li>Phase 1 in progress  -  the deterministic case engine, with 157 server tests and 13 client tests passing</li>
+          <li>Still to build  -  the feed, the forum composer, the disclosure handshake, the Index computation and Chambers</li>
+          <li>Invite-only closed beta is the entry model; there is no open registration and no public marketing page</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <p>&copy; 2026 Hari Prasad Upadhyay</p>
+    </div>
+  </div>
+</footer>
+<script>
+window.addEventListener('scroll',function(){document.querySelector('.nav').classList.toggle('scrolled',window.scrollY>20)});
+</script>
+</body>
+</html>

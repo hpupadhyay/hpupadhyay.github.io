@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MRP & Profit Calculator  -  Hari Prasad Upadhyay</title>
+<title>Bar Code Scanner  -  Hari Prasad Upadhyay</title>
 <link rel="stylesheet" href="../css/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
     <div class="nav-links">
       <a href="../index.html">Home</a>
       <a href="public.html">Apps</a>
-      <a href="testing.html">Testing</a>
+      <a href="testing.html" class="active">Testing</a>
       <a href="development.html">In Progress</a>
       <a href="https://groups.google.com/g/build--test-app-club" target="_blank" class="nav-cta">Join Tester's Group</a>
     </div>
@@ -25,14 +25,14 @@
 </nav>
 
 <div class="container app-page">
-  <a class="back" href="public.html">&larr; Published Apps</a>
+  <a class="back" href="testing.html">&larr; Early Access</a>
 
   <div class="app-hero">
-    <img class="icon" src="../assets/mrp-calculator.png" alt="MRP & Profit Calculator icon">
+    <img class="icon" src="../assets/barcode-scanner.png" alt="Bar Code Scanner icon">
     <div class="app-hero-info">
-      <h2>MRP &amp; Profit Calculator</h2>
-      <p class="tagline">Import MRP, purchase cost &amp; reverse MRP analyzer</p>
-      <a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.mrpcalculator.mrp_calculator" target="_blank">Get on Play Store</a>
+      <h2>Bar Code Scanner</h2>
+      <p class="tagline">Serverless barcode scanner that types straight into your PC</p>
+      <a class="btn btn-early" href="https://play.google.com/store/apps/details?id=com.barcodewedge.app" target="_blank">Early Access  -  Testing</a>
     </div>
   </div>
 
@@ -40,75 +40,69 @@
     <div class="app-content">
       <div class="section">
         <h3>About</h3>
-        <p>Business pricing calculator for importers, distributors, wholesalers, retailers, and online sellers. Calculate MRP using six pricing tools across four import strategies, two local strategies, and two cloud/listing strategies  -  with reverse analysis, multi-currency support, and PDF export.</p>
+        <p>A standalone barcode scanner built for stock counters, warehouse staff and anyone who types barcodes all day. The scanning engine is bundled in the app, so it works with no server, no backend, no account and no internet connection. Scanned values are typed into your PC over a Bluetooth HID keyboard, so the app you already use needs nothing installed on the desktop.</p>
       </div>
 
       <div class="section">
-        <h3>Import MRP Calculator</h3>
+        <h3>Scanning</h3>
         <ul>
-          <li>Four pricing strategies calculated simultaneously  -  company margin on Landing/Selling Price × dealer margin on MRP/Selling Price</li>
-          <li>Full breakdown  -  Base INR, customs, freight, landing cost, company margin, selling price, GST, MRP, dealer invoice, profit per unit</li>
-          <li>Strategy comparison table with Best/Good/Average rank badges</li>
-          <li>Unit-based total profit across all strategies</li>
+          <li>Camera scanning via CameraX with on-device ML Kit decoding</li>
+          <li>Multi-scan reports every code in frame, not only the first</li>
+          <li>Detection overlay boxes each code while it is in view</li>
+          <li>Format filtering, where an empty selection means every format</li>
+          <li>Check-digit validation for EAN-13, EAN-8, UPC-A and UPC-E, off by default, showing the expected digit on a mismatch</li>
+          <li>Zoom slider clamped to the device's real maximum, and tap to focus from the tapped point</li>
+          <li>Torch, scan beep and vibration feedback</li>
         </ul>
       </div>
 
       <div class="section">
-        <h3>Local Calculator</h3>
+        <h3>Batch Mode</h3>
         <ul>
-          <li>Two strategies  -  company margin on Landing Cost vs Selling Price</li>
-          <li>Handles GST-registered and non-registered companies</li>
-          <li>Other expenses  -  percentage and fixed amount</li>
-          <li>Full breakdown  -  purchase cost, landing cost, selling price, GST, MRP, profit per unit</li>
+          <li>Three modes  -  single review, add-and-continue, and send the whole batch</li>
+          <li>Per-value repeat counting, so a stock count of identical barcodes reads as one row with a count</li>
+          <li>A value must agree across three sightings within 400 ms before it is sent, so an unstable read is never typed into the PC</li>
+          <li>A genuine second label entering the frame is still accepted immediately</li>
+          <li>A failed send keeps the batch for retry instead of discarding it</li>
+          <li>Configurable separator between values  -  newline, tab, comma, semicolon, pipe, space or nothing</li>
         </ul>
       </div>
 
       <div class="section">
-        <h3>Cloud / Listing Price Calculator</h3>
+        <h3>Sending To A PC</h3>
         <ul>
-          <li>Two strategies for online marketplace listing price</li>
-          <li>Platform deductions  -  commission, commission GST, freight, freight GST, total ITC recoverable</li>
-          <li>Reverse calculation of listing price when commission and freight are percentages of the listing price itself</li>
-          <li>GST-registered toggle with Input Tax Credit recovery</li>
+          <li>Bluetooth HID keyboard output to a paired computer</li>
+          <li>Send suffix of none, Tab or Enter, with Enter as the default</li>
+          <li>Capital letters and shifted symbols are sent correctly</li>
+          <li>Widened hold and release gap so a dropped Bluetooth report cannot leave a key stuck down and auto-repeating</li>
+          <li>Prefix and suffix payload templates</li>
         </ul>
       </div>
 
       <div class="section">
-        <h3>Reverse Analyzers</h3>
+        <h3>Find And Pick</h3>
         <ul>
-          <li>Import Cost Analyzer  -  given a fixed MRP, solve for company margin, dealer margin, or base price</li>
-          <li>Local Cost Analyzer  -  solve for company margin or purchase cost</li>
-          <li>Listing Price Analyzer  -  solve for company margin or purchase cost with full platform deduction breakdown</li>
-          <li>Each analyzer works across all applicable strategies</li>
+          <li>Target list that accepts only listed values and ignores everything else silently</li>
+          <li>Built for picking against a known stock file rather than free scanning</li>
         </ul>
       </div>
 
       <div class="section">
-        <h3>Currency & Tax</h3>
+        <h3>Export &amp; History</h3>
         <ul>
-          <li>17 currencies  -  INR, USD, EUR, GBP, AED, SAR, BDT, PKR, LKR, NGN, ZAR, KES, CNY, JPY, AUD, CAD, SGD</li>
-          <li>Configurable home currency and import currency with editable exchange rate</li>
-          <li>Customizable tax label  -  rename to GST, VAT, or any country-specific term</li>
-          <li>GST-registered toggle  -  ITC on commission and freight GST when registered</li>
+          <li>Batch export as CSV, TSV or JSON through the share sheet, with RFC 4180 quoting</li>
+          <li>Local scan history with re-send</li>
+          <li>Manual entry keypad with numeric and alphanumeric layouts</li>
+          <li>Empty barcode payloads are rejected instead of sent</li>
         </ul>
       </div>
 
       <div class="section">
-        <h3>Export & History</h3>
+        <h3>Requirements</h3>
         <ul>
-          <li>PDF export  -  professional A4 reports with strategy comparison, breakdown, and recommendations</li>
-          <li>Copy to clipboard  -  formatted text for messaging and email</li>
-          <li>Calculation history  -  save, rename, filter, and re-export</li>
-          <li>Strategy selection filter  -  include only selected strategies in PDF and copy</li>
-        </ul>
-      </div>
-
-      <div class="section">
-        <h3>Formula Guide</h3>
-        <ul>
-          <li>4-tab educational guide  -  Import MRP, Listing Price, Strategy Compare, Visual Flow</li>
-          <li>Step-by-step formulas and color-coded flow diagrams</li>
-          <li>Covers forward and reverse calculations with ITC recovery</li>
+          <li>Android 7.0 (API 24) or higher</li>
+          <li>Bluetooth for sending to a PC; scanning works without it</li>
+          <li>Camera permission</li>
         </ul>
       </div>
     </div>
@@ -118,11 +112,11 @@
       <div class="screenshots-wrap">
         <div class="screenshots" id="screenshots">
           <div class="screenshots-track" id="track">
-            <img src="../assets/mrp-calc-s1.jpg" alt="Screenshot 1" onclick="openLightbox(this.src)">
-            <img src="../assets/mrp-calc-s2.jpg" alt="Screenshot 2" onclick="openLightbox(this.src)">
-            <img src="../assets/mrp-calc-s3.jpg" alt="Screenshot 3" onclick="openLightbox(this.src)">
-            <img src="../assets/mrp-calc-s4.jpg" alt="Screenshot 4" onclick="openLightbox(this.src)">
-            <img src="../assets/mrp-calc-s5.jpg" alt="Screenshot 5" onclick="openLightbox(this.src)">
+            <img src="../assets/barcode-s1.jpg" alt="Screenshot 1" onclick="openLightbox(this.src)">
+            <img src="../assets/barcode-s2.jpg" alt="Screenshot 2" onclick="openLightbox(this.src)">
+            <img src="../assets/barcode-s3.jpg" alt="Screenshot 3" onclick="openLightbox(this.src)">
+            <img src="../assets/barcode-s4.jpg" alt="Screenshot 4" onclick="openLightbox(this.src)">
+            <img src="../assets/barcode-s5.jpg" alt="Screenshot 5" onclick="openLightbox(this.src)">
           </div>
         </div>
         <div class="screenshots-nav">
