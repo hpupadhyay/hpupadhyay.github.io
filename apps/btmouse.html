@@ -15,8 +15,8 @@
     <a href="../index.html" class="nav-brand">Hari Prasad Upadhyay</a>
     <div class="nav-links">
       <a href="../index.html">Home</a>
-      <a href="public.html">Apps</a>
-      <a href="testing.html" class="active">Testing</a>
+      <a href="public.html" class="active">Apps</a>
+      <a href="testing.html">Testing</a>
       <a href="https://groups.google.com/g/build--test-app-club" target="_blank" class="nav-cta">Join Tester's Group</a>
     </div>
     <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
@@ -24,14 +24,14 @@
 </nav>
 
 <div class="container app-page">
-  <a class="back" href="testing.html">&larr; Early Access</a>
+  <a class="back" href="public.html">&larr; Published</a>
 
   <div class="app-hero">
     <img class="icon" src="../assets/btmouse.png" alt="BTMouse icon">
     <div class="app-hero-info">
       <h2>BTMouse</h2>
-      <p class="tagline">Turn your phone into a Bluetooth mouse, keyboard &amp; remote for your PC</p>
-      <a class="btn btn-early" href="https://play.google.com/store/apps/details?id=com.btmouse" target="_blank">Early Access  -  Testing</a>
+      <p class="tagline">Bluetooth mouse, keyboard &amp; remote for PC. Air mouse, biometric unlock. 100% serverless.</p>
+      <a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.btmouse" target="_blank">Get on Play Store</a>
     </div>
   </div>
 
@@ -39,28 +39,32 @@
     <div class="app-content">
       <div class="section">
         <h3>About</h3>
-        <p>BTMouse turns your Android phone into a powerful wireless Bluetooth mouse, keyboard, and remote control for your PC. 100% serverless - works directly over Bluetooth with no internet, no accounts, and no ads. No PC software or drivers required.</p>
+        <p>BTMouse transforms your Android phone into a powerful wireless Bluetooth mouse, keyboard, and remote control for your PC. Works directly over Bluetooth - no internet, no servers, no cloud. No accounts needed, no data collection, zero ads, zero subscriptions.</p>
       </div>
 
       <div class="section">
-        <h3>Mouse &amp; Trackpad</h3>
+        <h3>Mouse Control &amp; Trackpad</h3>
         <ul>
-          <li>Precision trackpad with left and right click</li>
-          <li>Adjustable pointer and scroll speed</li>
-          <li>Air Mouse - tilt your phone to control cursor via accelerometer</li>
+          <li>Precision trackpad with left click, right click, and scroll support</li>
+          <li>Adjustable pointer speed and scroll speed</li>
           <li>Swap buttons for left-handed use</li>
-          <li>Dedicated horizontal scroll zone</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Air Mouse</h3>
+        <ul>
+          <li>Tilt your phone to control the PC cursor using the accelerometer</li>
+          <li>Ideal for presentations and media browsing from a distance</li>
         </ul>
       </div>
 
       <div class="section">
         <h3>Full Keyboard</h3>
         <ul>
-          <li>Complete PC keyboard with F1-F12, navigation cluster, modifiers</li>
-          <li>Windows and Mac layout toggle (Ctrl/Win/Alt vs Ctrl/Cmd/Opt)</li>
+          <li>Complete PC keyboard with function keys (F1-F12), navigation cluster, modifiers (Ctrl, Alt, Shift, Win/Cmd), and Caps Lock</li>
           <li>Long-press key repeat with adjustable delay and rate</li>
-          <li>Voice-to-text input - speak and type to your PC</li>
-          <li>Paste to PC - reads phone clipboard and types it automatically</li>
+          <li>Windows and Mac layout toggle</li>
         </ul>
       </div>
 
@@ -76,25 +80,23 @@
         <h3>Number Pad</h3>
         <ul>
           <li>Dedicated number pad layout with Num Lock toggle</li>
-          <li>Arithmetic operators and Enter</li>
-          <li>Perfect for data entry and spreadsheets</li>
+          <li>Perfect for data entry, spreadsheets, and calculations</li>
         </ul>
       </div>
 
       <div class="section">
         <h3>Programmable Shortcuts</h3>
         <ul>
-          <li>Grid of customizable shortcut buttons</li>
-          <li>12 pre-loaded shortcuts (Ctrl+C, Ctrl+V, Alt+Tab, Alt+F4, Ctrl+Alt+Del, etc.)</li>
-          <li>Create your own with custom labels and any key combination</li>
-          <li>Long-press to edit, delete with confirmation</li>
+          <li>Grid of programmable shortcut buttons</li>
+          <li>12 pre-loaded shortcuts (Ctrl+C, Ctrl+V, Alt+Tab, etc.)</li>
+          <li>Fully customizable labels and key combinations</li>
         </ul>
       </div>
 
       <div class="section">
         <h3>Presenter Mode</h3>
         <ul>
-          <li>Slide navigation - next, previous</li>
+          <li>Slide navigation - forward and back controls</li>
           <li>Start slideshow (F5), end show (Esc), blank screen (B)</li>
           <li>Annotation tools - pointer (Ctrl+P) and eraser (Ctrl+E)</li>
         </ul>
@@ -103,9 +105,7 @@
       <div class="section">
         <h3>Multimedia Controls</h3>
         <ul>
-          <li>Play, pause, previous/next track, stop</li>
-          <li>Volume up/down and mute</li>
-          <li>Fullscreen toggle (F11)</li>
+          <li>Play, pause, previous/next track, stop, volume up/down, mute, fullscreen toggle</li>
           <li>Large one-handed buttons</li>
         </ul>
       </div>
@@ -113,40 +113,78 @@
       <div class="section">
         <h3>Lock/Unlock PC</h3>
         <ul>
-          <li>Remotely lock Windows (Win+L), Mac (Ctrl+Cmd+Q), or Linux (Ctrl+Alt+L)</li>
-          <li>Unlock with biometric fingerprint verification</li>
-          <li>Encrypted password storage (AES-256-GCM) - never leaves your device</li>
-          <li>Ctrl+Alt+Del support for Windows secure attention</li>
+          <li>Lock remotely with Win+L (Windows), Ctrl+Cmd+Q (Mac), or Ctrl+Alt+L (Linux)</li>
+          <li>Unlock by typing your password automatically</li>
+          <li>Ctrl+Alt+Del support for Windows</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Biometric PC Unlock</h3>
+        <ul>
+          <li>Unlock your PC with your fingerprint</li>
+          <li>Phone verifies your identity locally, then types your password via Bluetooth</li>
+          <li>No password ever leaves your device</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Encrypted Password Storage</h3>
+        <ul>
+          <li>Passwords stored locally using AES-256-GCM encryption backed by Android Keystore</li>
+          <li>Never transmitted over any network</li>
         </ul>
       </div>
 
       <div class="section">
         <h3>Clipboard Sync</h3>
         <ul>
-          <li>Phone to PC - paste text and it types automatically with progress bar</li>
-          <li>PC to phone - embedded web server with PIN authentication</li>
-          <li>6-digit session PIN with rate limiting and 10-minute timeout</li>
+          <li>Phone to PC - paste text and it types automatically</li>
+          <li>PC to phone - embedded web server with PIN authentication; visit a local URL on your PC browser to send clipboard data</li>
         </ul>
       </div>
 
       <div class="section">
         <h3>Mouse Jiggler</h3>
         <ul>
-          <li>Keep-Alive foreground service prevents PC from sleeping</li>
+          <li>Keep-Alive service prevents your PC from sleeping</li>
           <li>Subtle 2-pixel movements every 15 seconds with net-zero displacement</li>
-          <li>Perfect for long downloads, RDP/VNC, and keeping status active</li>
+          <li>Perfect for long downloads, remote desktop sessions, and keeping status active on Slack/Teams</li>
         </ul>
       </div>
 
       <div class="section">
         <h3>Customizable Settings</h3>
         <ul>
-          <li>Pointer speed (0.3x to 3x) and scroll speed (0.3x to 3x)</li>
-          <li>Air Mouse sensitivity (1x to 10x) with dead zone filtering</li>
-          <li>Key repeat delay (100-1000ms) and repeat rate (20-200ms)</li>
-          <li>Haptic vibration feedback toggle</li>
-          <li>Keep screen on, auto-connect on startup</li>
+          <li>Pointer speed (0.3x to 3x)</li>
+          <li>Scroll speed (0.3x to 3x)</li>
+          <li>Air Mouse sensitivity (1x to 10x)</li>
+          <li>Key repeat delay and rate</li>
+          <li>Haptic vibration feedback</li>
+          <li>Keep screen on toggle</li>
+          <li>Auto-connect on startup</li>
           <li>3 themes: Light, Dark, System</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Cross-Platform Support</h3>
+        <ul>
+          <li>Works with Windows, macOS, and Linux</li>
+          <li>Toggle between Windows (Ctrl/Win/Alt) and Mac (Ctrl/Cmd/Opt) keyboard layouts</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Why Serverless Matters</h3>
+        <ul>
+          <li>No internet required - works offline</li>
+          <li>No account or sign-up needed</li>
+          <li>No data leaves your devices</li>
+          <li>No monthly fees or subscriptions</li>
+          <li>No third-party servers involved</li>
+          <li>Faster response - direct Bluetooth connection</li>
+          <li>No ads, ever</li>
         </ul>
       </div>
 
@@ -155,7 +193,16 @@
         <ul>
           <li>Android 9.0 (API 28) or higher</li>
           <li>PC with Bluetooth support</li>
-          <li>Works with Windows, macOS, and Linux</li>
+          <li>BTMouse companion app installed on PC</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Permissions</h3>
+        <ul>
+          <li>Bluetooth - to connect and communicate with your PC</li>
+          <li>Foreground Service - to maintain stable connection</li>
+          <li>Biometric - for fingerprint-gated PC unlock</li>
         </ul>
       </div>
     </div>
@@ -169,6 +216,7 @@
             <img src="../assets/btmouse-s2.jpg" alt="Screenshot 2" onclick="openLightbox(this.src)">
             <img src="../assets/btmouse-s3.jpg" alt="Screenshot 3" onclick="openLightbox(this.src)">
             <img src="../assets/btmouse-s4.jpg" alt="Screenshot 4" onclick="openLightbox(this.src)">
+            <img src="../assets/btmouse-s5.jpg" alt="Screenshot 5" onclick="openLightbox(this.src)">
           </div>
         </div>
         <div class="screenshots-nav">
