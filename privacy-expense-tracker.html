@@ -29,14 +29,19 @@
 
 <h2>3. Data Storage and Security</h2>
 <p>Your financial data is stored locally on your device as JSON in the app's private storage. This data does not leave your device unless you choose to move it, in one of three ways:</p>
-<p>&bull; <strong>Backup</strong> &mdash; you write a backup file yourself, locally or to your own Google Drive (section 5).<br>
+<p>&bull; <strong>Backup</strong> &mdash; you write a backup file yourself to the app's private storage or save a copy to a location of your choosing, and you can optionally back up to your own Google Drive (section 5).<br>
 &bull; <strong>CSV export</strong> &mdash; you export to a file that is saved wherever you choose.<br>
 &bull; <strong>Share</strong> &mdash; you share a CSV or backup file to another app of your choosing.</p>
 <p>Data stored on the device is not encrypted at rest. Anyone with access to your unlocked device or a copy of your backup file can read its contents. We recommend protecting your device with a screen lock and storing backup files in a private location.</p>
 
-<h2>4. Backup and Storage Permission</h2>
-<p>The app requests the MANAGE_EXTERNAL_STORAGE ("All files access") permission on Android 11 and above to write backup files to a shared folder at <code>Expense_Tracker/Databases/</code> on your device's internal storage. This is a shared, publicly readable location chosen so that your backups survive uninstalling the app.</p>
-<p>You can decline this permission. Local backups will then be limited to the app's private storage and will be deleted when the app is uninstalled. This is the only reason the app requests broad file access.</p>
+<h2>4. Backup and Storage</h2>
+<p>The app does not request the MANAGE_EXTERNAL_STORAGE ("All files access") permission.</p>
+<p>&bull; <strong>Local backups</strong> &mdash; automatic and manual backups are kept in the app's private storage, which does not require any permission. This storage is deleted when the app is uninstalled.</p>
+<p>&bull; <strong>Public backups</strong> &mdash; every backup is also saved automatically to a public folder named "ExpenseTracker" so it survives uninstalling the app and can be found automatically after a reinstall:
+<em>On Android 10 and later</em>, this folder is in your device's public Downloads folder and the files are managed by the operating system's media store. They are owned by the app, so it can write, read, list, and delete only those files it created and no storage permission is required. <em>On Android 8 and 9</em> (the only versions that do not support that media-store access), the folder is in shared storage and the app requests the standard WRITE and READ EXTERNAL STORAGE permissions at runtime, solely to create, list, and read the backup files in that folder. Those permissions are limited to Android 9 and below, so they are never requested on Android 10 and later.</p>
+<p>&bull; <strong>Save Backup to a File</strong> &mdash; you can also save a backup copy to any location you choose using the system file picker. This copy is owned by you, is not tied to the app, and survives uninstalling the app.</p>
+<p>&bull; <strong>Restore</strong> &mdash; you can restore from the public backup copy automatically, from a saved file selected with the system file picker, or from Google Drive.</p>
+<p>The system file picker is operated by the operating system; the app never reads or writes any files outside of the backup folders it manages or the files you explicitly select or save. This is the only way the app accesses files on the device.</p>
 
 <h2>5. Google Drive Backup (Optional)</h2>
 <p>The app offers an optional Google Drive backup feature. If you choose to enable it, your financial data is uploaded to your personal Google Drive account using your own Google credentials, via Google's sign-in flow. We never see your Google password.</p>
@@ -50,9 +55,8 @@
 
 <h2>8. Data Retention and Deletion</h2>
 <p>Your financial data lives only on your device. To delete it:</p>
-<p>&bull; Uninstall the app. This removes all data held in the app's private storage.<br>
-&bull; Delete the app, then remove the <code>Expense_Tracker/Databases/</code> folder from your device's internal storage.<br>
-&bull; Revoke the "All files access" permission and uninstall, if you prefer.<br>
+<p>&bull; Uninstall the app. This removes all data held in the app's private storage, including local backups.<br>
+&bull; Delete any backup copies you saved outside the app, including the "ExpenseTracker" folder (in your Downloads folder on Android 10+, or at your device's storage root on Android 8/9).<br>
 &bull; To remove a Google Drive backup, sign out of the backup feature or delete it from your Google Drive's app data.</p>
 <p>Because we store and process nothing on our end, there is no data held by us that would need a deletion request.</p>
 
