@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="../Developer%20Icon.png">
+<title>ArtiStanza Reader  -  Hari Prasad Upadhyay</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a href="../index.html" class="nav-brand">Hari Prasad Upadhyay</a>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="public.html">Apps</a>
+      <a href="testing.html" class="active">Testing</a>
+      <a href="https://groups.google.com/g/build--test-app-club" target="_blank" class="nav-cta">Join Tester's Group</a>
+    </div>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="container app-page">
+  <a class="back" href="testing.html">&larr; Early Access</a>
+
+  <div class="app-hero">
+    <img class="icon" src="../assets/artistanza.png" alt="ArtiStanza Reader icon">
+    <div class="app-hero-info">
+      <h2>ArtiStanza Reader</h2>
+      <p class="tagline">A quiet home for poems and short stories, in your pocket</p>
+      <a class="btn btn-early" href="https://groups.google.com/g/build--test-app-club" target="_blank">Early Access  -  Join the tester group</a>
+    </div>
+  </div>
+
+  <div class="app-body">
+    <div class="app-content">
+      <div class="section">
+        <h3>About</h3>
+        <p>ArtiStanza Reader brings the ArtiStanza library of poems and short stories to Android. Verse is set with every line break left exactly where the author put it, in a members-only library you sign in to. Saving a work keeps a copy on the phone, so a poem still opens on a train with no signal. There are no ads and no tracking, and nothing you read is handed to another app.</p>
+      </div>
+
+      <div class="section">
+        <h3>Reading</h3>
+        <ul>
+          <li>Poems and short stories in English, Hindi and Nepali</li>
+          <li>Line breaks, stanza spacing and Devanagari preserved as written</li>
+          <li>A Key List of moods across the top of the feed, to read by feeling rather than by search</li>
+          <li>Works carry their author byline, and open straight into the text</li>
+          <li>Pull to refresh for new work</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Offline Reading</h3>
+        <ul>
+          <li>Save any open work to the phone; it is stored in the app's private storage and opens with no connection</li>
+          <li>A <strong>Saved offline</strong> shelf lists everything you kept, with remove and clear</li>
+          <li>Saved works survive a restart, and are cleared when you sign out</li>
+          <li>Writes are temp-then-rename, so a half-written file is never left behind</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Reading Dashboard</h3>
+        <ul>
+          <li>Time read  -  all time, today and this week</li>
+          <li>Current day streak and your daily totals</li>
+          <li>Mood tallies built from what you actually read</li>
+          <li>A session counts once it passes five seconds, so a mis-tap is not counted</li>
+          <li>The whole log lives on your device and is never sent to the server</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Kept Private</h3>
+        <ul>
+          <li>No advertising, no analytics, no advertising identifier, no cross-app tracking</li>
+          <li>Published work is protected from screenshots and screen recording</li>
+          <li>No share, copy or export path for verse, which protects the authors you read</li>
+          <li>Backup and device-to-device transfer are excluded for the app's private data</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Your Account</h3>
+        <ul>
+          <li>The library is members-only: sign in or create a free account</li>
+          <li>One session token is kept in secure storage, guarded by the Android keystore; nothing else is persisted</li>
+          <li>Your email, handle and display name are held by the ArtiStanza platform at artistanza.com</li>
+          <li>Ask for a copy of your data, or for deletion of your account, by email</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Requirements</h3>
+        <ul>
+          <li>Android 8.0 (API 26) or higher</li>
+          <li>A free ArtiStanza account</li>
+          <li>An internet connection for the library; saved works read offline</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="app-screenshots">
+      <h3>Screenshots</h3>
+      <div class="screenshots-wrap">
+        <div class="screenshots" id="screenshots">
+          <div class="screenshots-track" id="track">
+            <img src="../assets/artistanza-s1.jpg" alt="Screenshot 1" onclick="openLightbox(this.src)">
+            <img src="../assets/artistanza-s2.jpg" alt="Screenshot 2" onclick="openLightbox(this.src)">
+            <img src="../assets/artistanza-s3.jpg" alt="Screenshot 3" onclick="openLightbox(this.src)">
+            <img src="../assets/artistanza-s4.jpg" alt="Screenshot 4" onclick="openLightbox(this.src)">
+            <img src="../assets/artistanza-s5.jpg" alt="Screenshot 5" onclick="openLightbox(this.src)">
+            <img src="../assets/artistanza-s6.jpg" alt="Screenshot 6" onclick="openLightbox(this.src)">
+          </div>
+        </div>
+        <div class="screenshots-nav">
+          <button onclick="scrollShot(-1)">&#10094;</button>
+          <button onclick="scrollShot(1)">&#10095;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+  <button class="lightbox-prev" onclick="event.stopPropagation();navLightbox(-1)">&#10094;</button>
+  <button class="lightbox-next" onclick="event.stopPropagation();navLightbox(1)">&#10095;</button>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="Full screen screenshot" onclick="event.stopPropagation()">
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <p>&copy; 2026 Hari Prasad Upadhyay</p>
+    </div>
+  </div>
+</footer>
+<script>
+var lbImages=[],lbIdx=0,realCount=0,currentIdx=0,wrapping=false;
+window.addEventListener('scroll',function(){document.querySelector('.nav').classList.toggle('scrolled',window.scrollY>20)});
+function collectImages(){lbImages=[];document.querySelectorAll('.screenshots-track img').forEach(function(img){if(!img.classList.contains('clone'))lbImages.push(img.src)})}
+function openLightbox(src){collectImages();lbIdx=lbImages.indexOf(src);document.getElementById('lightbox-img').src=src;document.getElementById('lightbox').classList.add('open');document.body.style.overflow='hidden'}
+function closeLightbox(){document.getElementById('lightbox').classList.remove('open');document.body.style.overflow=''}
+function navLightbox(dir){lbIdx=(lbIdx+dir+lbImages.length)%lbImages.length;document.getElementById('lightbox-img').src=lbImages[lbIdx]}
+document.addEventListener('keydown',function(e){if(!document.getElementById('lightbox').classList.contains('open'))return;if(e.key==='Escape')closeLightbox();if(e.key==='ArrowLeft')navLightbox(-1);if(e.key==='ArrowRight')navLightbox(1)});
+function goToSlide(idx,animate){var c=document.getElementById('track');if(!c)return;if(!animate)c.style.transition='none';c.style.transform='translateX(-'+(idx*100)+'%)';if(!animate)c.offsetHeight;if(!animate)c.style.transition='transform 0.4s ease-in-out'}
+function scrollShot(dir){if(wrapping)return;var c=document.getElementById('track'),n=realCount;currentIdx+=dir;goToSlide(currentIdx+1,true);if((dir>0&&currentIdx>=n)||(dir<0&&currentIdx<0)){wrapping=true;setTimeout(function(){currentIdx=dir>0?0:n-1;goToSlide(currentIdx+1,false);wrapping=false},420)}}
+document.addEventListener('DOMContentLoaded',function(){var c=document.getElementById('track'),imgs=c.querySelectorAll('img');realCount=imgs.length;var first=imgs[0].cloneNode(true);first.classList.add('clone');c.appendChild(first);var last=imgs[imgs.length-1].cloneNode(true);last.classList.add('clone');c.insertBefore(last,imgs[0]);currentIdx=0;goToSlide(1,false)});
+</script>
+</body>
+</html>
